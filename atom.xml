@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Java绗旇</title>
+  <title>Java笔记</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>鑰佸瘨鑵块潚骞�</name>
+    <name>老寒腿青年</name>
     
   </author>
   
