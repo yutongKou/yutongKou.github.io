@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java</title>
+    <url>/2019/11/01/Java/</url>
+    <content><![CDATA[<h1 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre><code>List
+    ArrayList
+    Vector
+    LinkedList
+set
+    HashSet
+    LInkedHashSet
+    TreeSet</code></pre>]]></content>
+  </entry>
+  <entry>
     <title>面试题总结</title>
     <url>/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>title:  Java基础</p>
@@ -9,6 +21,7 @@
 <h3 id="3、hashcode和equal"><a href="#3、hashcode和equal" class="headerlink" title="3、hashcode和equal"></a>3、hashcode和equal</h3><p>​    两个对象的hashcode相同，equals不一定为true，<br>​    两个对象的equals为true，hashcode一定相同</p>
 <h3 id="4、final关键字"><a href="#4、final关键字" class="headerlink" title="4、final关键字"></a>4、final关键字</h3><p>​    final修饰的类叫最终类，该类不能被继承<br>​    final修饰的方法不能被重写<br>​    final修饰的变量叫常量<br>​        final修饰基本类型的局部变量，基本类型的值不能发生改变<br>​        final修饰引用类型的局部变量，引用类型的地址值不能发生改变，但是对象的堆内存的值可以改变。<br>​        final StringBuffer a = new StringBuffer(“a”);<br>​        a = new StringBuffer(“”);编译报错<br>​        a.append(“b”);编译成功</p>
 <h3 id="5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？"><a href="#5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？" class="headerlink" title="5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？"></a>5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？</h3><p>​    可以有多个类，但是只能有一个public的类，并且public的类名必须与文件名一致</p>
+<a id="more"></a>
 <h3 id="6、-amp-与-amp-amp-的区别"><a href="#6、-amp-与-amp-amp-的区别" class="headerlink" title="6、&amp;与&amp;&amp;的区别"></a>6、&amp;与&amp;&amp;的区别</h3><p>​    &amp;是逻辑与运算符和位运算符，只有当两边表达式都为true，运算结果才为true<br>​    &amp;&amp;是逻辑与运算符，但是具有短路效果，只要第一个表达式为false，则不再计算第二个表达式<br>​    if(str!=null&amp;&amp;!str.equals(“”))，str为null时，后面的不会执行，不会出现NullPointerException，反之，&amp;会报错。</p>
 <h3 id="7、在Java中如何跳出当前的多重嵌套循环？"><a href="#7、在Java中如何跳出当前的多重嵌套循环？" class="headerlink" title="7、在Java中如何跳出当前的多重嵌套循环？"></a>7、在Java中如何跳出当前的多重嵌套循环？</h3><p>​    在外层的循环语句前定义一个标号，然后在内层循环体的代码中使用带有标号break语句，即可跳出外层循环。</p>
 <h3 id="8、switch语句可以作用在byte、short、char、int、枚举、String"><a href="#8、switch语句可以作用在byte、short、char、int、枚举、String" class="headerlink" title="8、switch语句可以作用在byte、short、char、int、枚举、String"></a>8、switch语句可以作用在byte、short、char、int、枚举、String</h3><h3 id="9、-运算符，java编译器会对它进行类型转换"><a href="#9、-运算符，java编译器会对它进行类型转换" class="headerlink" title="9、+=运算符，java编译器会对它进行类型转换"></a>9、+=运算符，java编译器会对它进行类型转换</h3><p>​    short s1=1;<br>​    s1=s1+1;(错)<br>​    s1 +=1;(对)</p>
@@ -111,7 +124,6 @@
 19、mybatis mapper绑定的原理
     Mybatis会自动的为mapper接口生成动态代理实现类。</code></pre><h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><p>​    1、谈一下springBoot<br>​        我觉的spingboot是一个整合工具，它可以自动装配，降低了搭建环境的难度<br>​        内置web服务器<br>​        简化了maven配置<br>​        无需配置xml，导入jar包即可<br>​    2.Springboot自动装配原理<br>​        @SpringBootApplication注解中的@EnableAutoConfigure中的@Import中的selectImports方法返回了一个全类名的数组，全类名来源于spring-boot-autoConfigure中的spring.factories,</p>
 <h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><p>​    1、谈谈spring<br>​        spring是为了解决企业应用开发的复杂性而创建的，是一个轻量级的控制反转和面向切面的容器框架<br>​    2、Spring在选择用JDK动态代理还是CGLiB动态代理的依据和区别<br>​        jdk实现了接口的类，是用反射生成一个匿名子类，<br>​        cglib没有实现接口的类，使用asm开源包，将被代理对象加载，通过修改字节码文件生成子类<br>​    3、spring aop实现原理<br>​        动态代理<br>​    4、spring template<br>​        是一种操作数据库的技术、对jdbc做了封装，简化了数据库的操作，能够把数据对象映射成实体类。<br>​    5、spring注解<br>​        @Component<br>​        @Repository<br>​        @Service<br>​        @Controller<br>​        @Autowired<br>​        @Resource<br>​    6、spring的注入有几种<br>​        构造方法<br>​        setter方法<br>​        p命名空间注入<br>​        集合注入<br>​        基于注解的注入<br>​    7、spring默认装配吗<br>​        不默认装配<br>​    8、Spring和SpringBoot的区别<br>​        springboot是spring的拓展，使得开发和部署更加方便<br>​        无需配置复杂的xml，只需导入相关jar包，<br>​        内嵌了Web服务器<br>​        提供POM、简化了Maven配置<br>​    9、Bean的配置<br>​        全类名的反射<br>​        静态工厂<br>​        实例工厂<br>​    10、spring的事务<br>​        事务的特性<br>​            原子性<br>​            一致性<br>​            隔离性<br>​            持久性<br>​        隔离级别<br>​            读未提交<br>​            读已提交<br>​            可重复读<br>​            串行<br>​        传播行为：<br>​            <strong>1、PROPAGATION_REQUIRED：</strong>如果当前没有事务，就创建一个新事务，如果当前存在事务，就加入该事务，该设置是最常用的设置。<br>​            2、PROPAGATION_SUPPORTS：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就以非事务执行。‘<br>​            3、PROPAGATION_MANDATORY：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就抛出异常。<br>​            <strong>4、PROPAGATION_REQUIRES_NEW：</strong>创建新事务，无论当前存不存在事务，都创建新事务。<br>​            5、PROPAGATION_NOT_SUPPORTED：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。<br>​            6、PROPAGATION_NEVER：以非事务方式执行，如果当前存在事务，则抛出异常。<br>​            <strong>7、PROPAGATION_NESTED：</strong>如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。<br>​    11、静态代理和动态代理的区别<br>​        静态代理只能代理一个类，动态代理可以代理一个接口下的多个接口类<br>​        静态代理事先就知道要代理那个类，动态代理在运行时才知道<br>​    12、jdk动态代理和cglib动态代理的区别<br>​        jdk是通过反射机制生成一个实现接口的匿名子类<br>​        cglib是通过asm开源包，将被代理对象类加载进来，通过修改字节码文件生成子类<br>​        实现了接口，就可以用jdk动态代理，也可以强制使用cglib<br>​        如果没有实现接口，就必须使用cglib<br>​    13、spring的好处<br>​        1、方便解耦，简化开发，<br>​        2、AOP编程的支持<br>​        3、声明式事务的支持<br>​        4、spring对junit4支持，方便程序测试<br>​        5、方便集成各种优秀框架</p>
-<a id="more"></a>
 ]]></content>
   </entry>
 </search>
