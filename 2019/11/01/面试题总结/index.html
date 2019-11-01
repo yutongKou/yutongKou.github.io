@@ -1,9 +1,258 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>面试题总结</title>
-    <url>/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>title:  Java基础</p>
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Java笔记" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.3',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="title:  Java基础 1、JDK和JRE有什么区别​    JDK：java开发工具包，提供了java的开发环境和运行环境。​    JRE：java运行环境，为java的运行提供了所需环境​    JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。​    如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。 2、==和e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93&#x2F;index.html">
+<meta property="og:site_name" content="Java笔记">
+<meta property="og:description" content="title:  Java基础 1、JDK和JRE有什么区别​    JDK：java开发工具包，提供了java的开发环境和运行环境。​    JRE：java运行环境，为java的运行提供了所需环境​    JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。​    如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。 2、==和e">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-01T10:59:01.574Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>面试题总结 | Java笔记</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Java笔记</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mj.jpg">
+      <meta itemprop="name" content="老寒腿青年">
+      <meta itemprop="description" content="莫向外求">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Java笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面试题总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-11-01 18:58:02 / Modified: 18:59:01" itemprop="dateCreated datePublished" datetime="2019-11-01T18:58:02+08:00">2019-11-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>title:  Java基础</p>
 <h3 id="1、JDK和JRE有什么区别"><a href="#1、JDK和JRE有什么区别" class="headerlink" title="1、JDK和JRE有什么区别"></a>1、JDK和JRE有什么区别</h3><p>​    JDK：java开发工具包，提供了java的开发环境和运行环境。<br>​    JRE：java运行环境，为java的运行提供了所需环境<br>​    JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。<br>​    如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。</p>
 <h3 id="2、-和equals的区别是什么"><a href="#2、-和equals的区别是什么" class="headerlink" title="2、==和equals的区别是什么"></a>2、==和equals的区别是什么</h3><p>​    ==：<br>​        基本类型：比较值是否相同；<br>​        引用类型：比较地址值是否相同；<br>​        String x = “string”;<br>​        String y = “string”;<br>​        String z = new String(“string”);<br>​        System.out.println(x==y); // true<br>​        System.out.println(x==z); // false<br>​        System.out.println(x.equals(y)); // true<br>​        System.out.println(x.equals(z)); // true<br>​    equals：<br>​        Object类中equals本质是==，<br>​        public boolean equals(Object obj) {<br>​            return (this == obj);<br>​        }<br>​        String和Integer等重写equals方法，此时比较值是否相同</p>
 <h3 id="3、hashcode和equal"><a href="#3、hashcode和equal" class="headerlink" title="3、hashcode和equal"></a>3、hashcode和equal</h3><p>​    两个对象的hashcode相同，equals不一定为true，<br>​    两个对象的equals为true，hashcode一定相同</p>
@@ -112,6 +361,162 @@
     Mybatis会自动的为mapper接口生成动态代理实现类。</code></pre><h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><p>​    1、谈一下springBoot<br>​        我觉的spingboot是一个整合工具，它可以自动装配，降低了搭建环境的难度<br>​        内置web服务器<br>​        简化了maven配置<br>​        无需配置xml，导入jar包即可<br>​    2.Springboot自动装配原理<br>​        @SpringBootApplication注解中的@EnableAutoConfigure中的@Import中的selectImports方法返回了一个全类名的数组，全类名来源于spring-boot-autoConfigure中的spring.factories,</p>
 <h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><p>​    1、谈谈spring<br>​        spring是为了解决企业应用开发的复杂性而创建的，是一个轻量级的控制反转和面向切面的容器框架<br>​    2、Spring在选择用JDK动态代理还是CGLiB动态代理的依据和区别<br>​        jdk实现了接口的类，是用反射生成一个匿名子类，<br>​        cglib没有实现接口的类，使用asm开源包，将被代理对象加载，通过修改字节码文件生成子类<br>​    3、spring aop实现原理<br>​        动态代理<br>​    4、spring template<br>​        是一种操作数据库的技术、对jdbc做了封装，简化了数据库的操作，能够把数据对象映射成实体类。<br>​    5、spring注解<br>​        @Component<br>​        @Repository<br>​        @Service<br>​        @Controller<br>​        @Autowired<br>​        @Resource<br>​    6、spring的注入有几种<br>​        构造方法<br>​        setter方法<br>​        p命名空间注入<br>​        集合注入<br>​        基于注解的注入<br>​    7、spring默认装配吗<br>​        不默认装配<br>​    8、Spring和SpringBoot的区别<br>​        springboot是spring的拓展，使得开发和部署更加方便<br>​        无需配置复杂的xml，只需导入相关jar包，<br>​        内嵌了Web服务器<br>​        提供POM、简化了Maven配置<br>​    9、Bean的配置<br>​        全类名的反射<br>​        静态工厂<br>​        实例工厂<br>​    10、spring的事务<br>​        事务的特性<br>​            原子性<br>​            一致性<br>​            隔离性<br>​            持久性<br>​        隔离级别<br>​            读未提交<br>​            读已提交<br>​            可重复读<br>​            串行<br>​        传播行为：<br>​            <strong>1、PROPAGATION_REQUIRED：</strong>如果当前没有事务，就创建一个新事务，如果当前存在事务，就加入该事务，该设置是最常用的设置。<br>​            2、PROPAGATION_SUPPORTS：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就以非事务执行。‘<br>​            3、PROPAGATION_MANDATORY：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就抛出异常。<br>​            <strong>4、PROPAGATION_REQUIRES_NEW：</strong>创建新事务，无论当前存不存在事务，都创建新事务。<br>​            5、PROPAGATION_NOT_SUPPORTED：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。<br>​            6、PROPAGATION_NEVER：以非事务方式执行，如果当前存在事务，则抛出异常。<br>​            <strong>7、PROPAGATION_NESTED：</strong>如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。<br>​    11、静态代理和动态代理的区别<br>​        静态代理只能代理一个类，动态代理可以代理一个接口下的多个接口类<br>​        静态代理事先就知道要代理那个类，动态代理在运行时才知道<br>​    12、jdk动态代理和cglib动态代理的区别<br>​        jdk是通过反射机制生成一个实现接口的匿名子类<br>​        cglib是通过asm开源包，将被代理对象类加载进来，通过修改字节码文件生成子类<br>​        实现了接口，就可以用jdk动态代理，也可以强制使用cglib<br>​        如果没有实现接口，就必须使用cglib<br>​    13、spring的好处<br>​        1、方便解耦，简化开发，<br>​        2、AOP编程的支持<br>​        3、声明式事务的支持<br>​        4、spring对junit4支持，方便程序测试<br>​        5、方便集成各种优秀框架</p>
 <a id="more"></a>
-]]></content>
-  </entry>
-</search>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、JDK和JRE有什么区别"><span class="nav-number">1.</span> <span class="nav-text">1、JDK和JRE有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、-和equals的区别是什么"><span class="nav-number">2.</span> <span class="nav-text">2、==和equals的区别是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、hashcode和equal"><span class="nav-number">3.</span> <span class="nav-text">3、hashcode和equal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、final关键字"><span class="nav-number">4.</span> <span class="nav-text">4、final关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？"><span class="nav-number">5.</span> <span class="nav-text">5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、-amp-与-amp-amp-的区别"><span class="nav-number">6.</span> <span class="nav-text">6、&amp;与&amp;&amp;的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、在Java中如何跳出当前的多重嵌套循环？"><span class="nav-number">7.</span> <span class="nav-text">7、在Java中如何跳出当前的多重嵌套循环？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8、switch语句可以作用在byte、short、char、int、枚举、String"><span class="nav-number">8.</span> <span class="nav-text">8、switch语句可以作用在byte、short、char、int、枚举、String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9、-运算符，java编译器会对它进行类型转换"><span class="nav-number">9.</span> <span class="nav-text">9、+=运算符，java编译器会对它进行类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10、char类型可以存储一个中文汉字"><span class="nav-number">10.</span> <span class="nav-text">10、char类型可以存储一个中文汉字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11、静态变量和实例变量的区别"><span class="nav-number">11.</span> <span class="nav-text">11、静态变量和实例变量的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12、面向对象的三大特点"><span class="nav-number">12.</span> <span class="nav-text">12、面向对象的三大特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13、clone的相关知识点"><span class="nav-number">13.</span> <span class="nav-text">13、clone的相关知识点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14、方法重写和方法重载"><span class="nav-number">14.</span> <span class="nav-text">14、方法重写和方法重载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15、Integer和Int的区别，封装类的作用"><span class="nav-number">15.</span> <span class="nav-text">15、Integer和Int的区别，封装类的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16、for循环和foreach循环的区别"><span class="nav-number">16.</span> <span class="nav-text">16、for循环和foreach循环的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17、迭代器和for循环的区别"><span class="nav-number">17.</span> <span class="nav-text">17、迭代器和for循环的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18、Math函数"><span class="nav-number">18.</span> <span class="nav-text">18、Math函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM"><span class="nav-number"></span> <span class="nav-text">JVM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享"><span class="nav-number">1.</span> <span class="nav-text">1.JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、四种会话跟踪技术"><span class="nav-number">2.</span> <span class="nav-text">2、四种会话跟踪技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-现有一个preson类，有3个属性："><span class="nav-number">3.</span> <span class="nav-text">3.现有一个preson类，有3个属性：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-描述一下双亲委派机制。"><span class="nav-number">4.</span> <span class="nav-text">4.描述一下双亲委派机制。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、Ajax的基本原理"><span class="nav-number">5.</span> <span class="nav-text">5、Ajax的基本原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、assert断言"><span class="nav-number">6.</span> <span class="nav-text">6、assert断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、xml定义文档的方式，解析xml的的方式"><span class="nav-number">7.</span> <span class="nav-text">7、xml定义文档的方式，解析xml的的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8、谈谈反射"><span class="nav-number">8.</span> <span class="nav-text">8、谈谈反射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注解："><span class="nav-number">9.</span> <span class="nav-text">注解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泛型："><span class="nav-number">10.</span> <span class="nav-text">泛型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9、多线程"><span class="nav-number">11.</span> <span class="nav-text">9、多线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13、having和where的区别"><span class="nav-number">12.</span> <span class="nav-text">13、having和where的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1、业务权限问题"><span class="nav-number">13.</span> <span class="nav-text">1、业务权限问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、-Autowire与-Resource的区别"><span class="nav-number">14.</span> <span class="nav-text">2、@Autowire与@Resource的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、java获取方法的参数名"><span class="nav-number">15.</span> <span class="nav-text">3、java获取方法的参数名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、两表联查的方式"><span class="nav-number">16.</span> <span class="nav-text">4、两表联查的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、关于mysql三大范式的冲突"><span class="nav-number">17.</span> <span class="nav-text">5、关于mysql三大范式的冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、mysql索引"><span class="nav-number">18.</span> <span class="nav-text">6、mysql索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、var和let的作用范围"><span class="nav-number">19.</span> <span class="nav-text">7、var和let的作用范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8、缓存的适用性及不适用性"><span class="nav-number">20.</span> <span class="nav-text">8、缓存的适用性及不适用性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9、MyBatis和Hibernat二级缓存的区别"><span class="nav-number">21.</span> <span class="nav-text">9、MyBatis和Hibernat二级缓存的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10、三种Mybatis缓存可能发生的问题"><span class="nav-number">22.</span> <span class="nav-text">10、三种Mybatis缓存可能发生的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11、Lambda表达式"><span class="nav-number">23.</span> <span class="nav-text">11、Lambda表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17、为什么返回类型不能区分重载"><span class="nav-number">24.</span> <span class="nav-text">17、为什么返回类型不能区分重载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19、servlet的生命周期"><span class="nav-number">25.</span> <span class="nav-text">19、servlet的生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20、静态包含和动态包含的区别"><span class="nav-number">26.</span> <span class="nav-text">20、静态包含和动态包含的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21、多线程有几种实现方案，分别是哪几种？"><span class="nav-number">27.</span> <span class="nav-text">21、多线程有几种实现方案，分别是哪几种？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22、同步有几种方式，分别是什么"><span class="nav-number">28.</span> <span class="nav-text">22、同步有几种方式，分别是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23、启动一个线程是run-还是start-，他们的区别？"><span class="nav-number">29.</span> <span class="nav-text">23、启动一个线程是run()还是start()，他们的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24、sleep-和wait-方法的区别"><span class="nav-number">30.</span> <span class="nav-text">24、sleep()和wait()方法的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25、为什么wait-、notify-、notifyAll-等方法都定义在Object类中"><span class="nav-number">31.</span> <span class="nav-text">25、为什么wait()、notify()、notifyAll()等方法都定义在Object类中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26、线程的生命周期图"><span class="nav-number">32.</span> <span class="nav-text">26、线程的生命周期图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27、Session和Cookie的区别"><span class="nav-number">33.</span> <span class="nav-text">27、Session和Cookie的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28、forward跳转和redirect重定向的区别"><span class="nav-number">34.</span> <span class="nav-text">28、forward跳转和redirect重定向的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SpringMVC"><span class="nav-number"></span> <span class="nav-text">SpringMVC</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mybatis"><span class="nav-number"></span> <span class="nav-text">Mybatis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SpringBoot"><span class="nav-number"></span> <span class="nav-text">SpringBoot</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring"><span class="nav-number"></span> <span class="nav-text">Spring</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="老寒腿青年"
+    src="/images/mj.jpg">
+  <p class="site-author-name" itemprop="name">老寒腿青年</p>
+  <div class="site-description" itemprop="description">莫向外求</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">老寒腿青年</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.3
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

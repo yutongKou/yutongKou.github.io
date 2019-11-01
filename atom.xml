@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-01T08:05:56.976Z</updated>
+  <updated>2019-11-01T10:59:01.574Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,60 +17,122 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java基础核心知识点整理</title>
-    <link href="http://yoursite.com/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
-    <id>http://yoursite.com/2019/11/01/Java基础核心知识点整理/</id>
-    <published>2019-11-01T05:13:13.812Z</published>
-    <updated>2019-11-01T08:05:56.976Z</updated>
+    <title>面试题总结</title>
+    <link href="http://yoursite.com/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/11/01/面试题总结/</id>
+    <published>2019-11-01T10:58:02.538Z</published>
+    <updated>2019-11-01T10:59:01.574Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;title：Java知识&lt;/p&gt;
-&lt;h1 id=&quot;Java基础核心知识点整理&quot;&gt;&lt;a href=&quot;#Java基础核心知识点整理&quot; class=&quot;headerlink&quot; title=&quot;Java基础核心知识点整理&quot;&gt;&lt;/a&gt;Java基础核心知识点整理&lt;/h1&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>java</title>
-    <link href="http://yoursite.com/2019/11/01/java/"/>
-    <id>http://yoursite.com/2019/11/01/java/</id>
-    <published>2019-11-01T05:08:50.000Z</published>
-    <updated>2019-11-01T05:08:50.879Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/01/hello-world/"/>
-    <id>http://yoursite.com/2019/11/01/hello-world/</id>
-    <published>2019-11-01T04:41:26.752Z</published>
-    <updated>2019-11-01T04:41:26.752Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;title:  Java基础&lt;/p&gt;
+&lt;h3 id=&quot;1、JDK和JRE有什么区别&quot;&gt;&lt;a href=&quot;#1、JDK和JRE有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1、JDK和JRE有什么区别&quot;&gt;&lt;/a&gt;1、JDK和JRE有什么区别&lt;/h3&gt;&lt;p&gt;​    JDK：java开发工具包，提供了java的开发环境和运行环境。&lt;br&gt;​    JRE：java运行环境，为java的运行提供了所需环境&lt;br&gt;​    JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。&lt;br&gt;​    如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。&lt;/p&gt;
+&lt;h3 id=&quot;2、-和equals的区别是什么&quot;&gt;&lt;a href=&quot;#2、-和equals的区别是什么&quot; class=&quot;headerlink&quot; title=&quot;2、==和equals的区别是什么&quot;&gt;&lt;/a&gt;2、==和equals的区别是什么&lt;/h3&gt;&lt;p&gt;​    ==：&lt;br&gt;​        基本类型：比较值是否相同；&lt;br&gt;​        引用类型：比较地址值是否相同；&lt;br&gt;​        String x = “string”;&lt;br&gt;​        String y = “string”;&lt;br&gt;​        String z = new String(“string”);&lt;br&gt;​        System.out.println(x==y); // true&lt;br&gt;​        System.out.println(x==z); // false&lt;br&gt;​        System.out.println(x.equals(y)); // true&lt;br&gt;​        System.out.println(x.equals(z)); // true&lt;br&gt;​    equals：&lt;br&gt;​        Object类中equals本质是==，&lt;br&gt;​        public boolean equals(Object obj) {&lt;br&gt;​            return (this == obj);&lt;br&gt;​        }&lt;br&gt;​        String和Integer等重写equals方法，此时比较值是否相同&lt;/p&gt;
+&lt;h3 id=&quot;3、hashcode和equal&quot;&gt;&lt;a href=&quot;#3、hashcode和equal&quot; class=&quot;headerlink&quot; title=&quot;3、hashcode和equal&quot;&gt;&lt;/a&gt;3、hashcode和equal&lt;/h3&gt;&lt;p&gt;​    两个对象的hashcode相同，equals不一定为true，&lt;br&gt;​    两个对象的equals为true，hashcode一定相同&lt;/p&gt;
+&lt;h3 id=&quot;4、final关键字&quot;&gt;&lt;a href=&quot;#4、final关键字&quot; class=&quot;headerlink&quot; title=&quot;4、final关键字&quot;&gt;&lt;/a&gt;4、final关键字&lt;/h3&gt;&lt;p&gt;​    final修饰的类叫最终类，该类不能被继承&lt;br&gt;​    final修饰的方法不能被重写&lt;br&gt;​    final修饰的变量叫常量&lt;br&gt;​        final修饰基本类型的局部变量，基本类型的值不能发生改变&lt;br&gt;​        final修饰引用类型的局部变量，引用类型的地址值不能发生改变，但是对象的堆内存的值可以改变。&lt;br&gt;​        final StringBuffer a = new StringBuffer(“a”);&lt;br&gt;​        a = new StringBuffer(“”);编译报错&lt;br&gt;​        a.append(“b”);编译成功&lt;/p&gt;
+&lt;h3 id=&quot;5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot;&gt;&lt;a href=&quot;#5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot; class=&quot;headerlink&quot; title=&quot;5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot;&gt;&lt;/a&gt;5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？&lt;/h3&gt;&lt;p&gt;​    可以有多个类，但是只能有一个public的类，并且public的类名必须与文件名一致&lt;/p&gt;
+&lt;h3 id=&quot;6、-amp-与-amp-amp-的区别&quot;&gt;&lt;a href=&quot;#6、-amp-与-amp-amp-的区别&quot; class=&quot;headerlink&quot; title=&quot;6、&amp;amp;与&amp;amp;&amp;amp;的区别&quot;&gt;&lt;/a&gt;6、&amp;amp;与&amp;amp;&amp;amp;的区别&lt;/h3&gt;&lt;p&gt;​    &amp;amp;是逻辑与运算符和位运算符，只有当两边表达式都为true，运算结果才为true&lt;br&gt;​    &amp;amp;&amp;amp;是逻辑与运算符，但是具有短路效果，只要第一个表达式为false，则不再计算第二个表达式&lt;br&gt;​    if(str!=null&amp;amp;&amp;amp;!str.equals(“”))，str为null时，后面的不会执行，不会出现NullPointerException，反之，&amp;amp;会报错。&lt;/p&gt;
+&lt;h3 id=&quot;7、在Java中如何跳出当前的多重嵌套循环？&quot;&gt;&lt;a href=&quot;#7、在Java中如何跳出当前的多重嵌套循环？&quot; class=&quot;headerlink&quot; title=&quot;7、在Java中如何跳出当前的多重嵌套循环？&quot;&gt;&lt;/a&gt;7、在Java中如何跳出当前的多重嵌套循环？&lt;/h3&gt;&lt;p&gt;​    在外层的循环语句前定义一个标号，然后在内层循环体的代码中使用带有标号break语句，即可跳出外层循环。&lt;/p&gt;
+&lt;h3 id=&quot;8、switch语句可以作用在byte、short、char、int、枚举、String&quot;&gt;&lt;a href=&quot;#8、switch语句可以作用在byte、short、char、int、枚举、String&quot; class=&quot;headerlink&quot; title=&quot;8、switch语句可以作用在byte、short、char、int、枚举、String&quot;&gt;&lt;/a&gt;8、switch语句可以作用在byte、short、char、int、枚举、String&lt;/h3&gt;&lt;h3 id=&quot;9、-运算符，java编译器会对它进行类型转换&quot;&gt;&lt;a href=&quot;#9、-运算符，java编译器会对它进行类型转换&quot; class=&quot;headerlink&quot; title=&quot;9、+=运算符，java编译器会对它进行类型转换&quot;&gt;&lt;/a&gt;9、+=运算符，java编译器会对它进行类型转换&lt;/h3&gt;&lt;p&gt;​    short s1=1;&lt;br&gt;​    s1=s1+1;(错)&lt;br&gt;​    s1 +=1;(对)&lt;/p&gt;
+&lt;h3 id=&quot;10、char类型可以存储一个中文汉字&quot;&gt;&lt;a href=&quot;#10、char类型可以存储一个中文汉字&quot; class=&quot;headerlink&quot; title=&quot;10、char类型可以存储一个中文汉字&quot;&gt;&lt;/a&gt;10、char类型可以存储一个中文汉字&lt;/h3&gt;&lt;p&gt;​    因为java使用的编码Unicode，char类型是存储Unicode编码的字符，Unicode编码中有汉字字符，所以可以存储，一个汉字占两个字节（UTF-8中一个汉字占三个字节）&lt;/p&gt;
+&lt;h3 id=&quot;11、静态变量和实例变量的区别&quot;&gt;&lt;a href=&quot;#11、静态变量和实例变量的区别&quot; class=&quot;headerlink&quot; title=&quot;11、静态变量和实例变量的区别&quot;&gt;&lt;/a&gt;11、静态变量和实例变量的区别&lt;/h3&gt;&lt;p&gt;​    静态变量：&lt;br&gt;​        被static关键字修饰&lt;br&gt;​        属于类&lt;br&gt;​        加载类的字节码，静态变量就会别分配空间&lt;br&gt;​        可以直接使用类名调用&lt;/p&gt;
+&lt;h3 id=&quot;12、面向对象的三大特点&quot;&gt;&lt;a href=&quot;#12、面向对象的三大特点&quot; class=&quot;headerlink&quot; title=&quot;12、面向对象的三大特点&quot;&gt;&lt;/a&gt;12、面向对象的三大特点&lt;/h3&gt;&lt;p&gt;​    封装&lt;br&gt;​        隐藏复杂过程，暴露简单操作&lt;br&gt;​    继承&lt;br&gt;​        提高代码的重用性和拓展性&lt;br&gt;​        是多态的前提&lt;br&gt;​    多态&lt;br&gt;​        是父类或者接口的引用变量指向子类或者具体实现类的实例对象，在运行是进行动态绑定&lt;br&gt;​        多态的前提：继承&lt;br&gt;​        多态的体现：向上转型&lt;br&gt;​        多态的限制：向上转型时，子类独有的属性和方法无法使用&lt;br&gt;​        多态的作用：提高代码的拓展性&lt;br&gt;​        多态的机制：父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程序调用的方法在运行时间才动态绑定，就是引用变量所指向的具体实例对象的方法。&lt;/p&gt;
+&lt;h3 id=&quot;13、clone的相关知识点&quot;&gt;&lt;a href=&quot;#13、clone的相关知识点&quot; class=&quot;headerlink&quot; title=&quot;13、clone的相关知识点&quot;&gt;&lt;/a&gt;13、clone的相关知识点&lt;/h3&gt;&lt;p&gt;​    new一个对象的过程：&lt;br&gt;​        new是一个操作符，作用是分配内存，是根据new后面对象的类型来分配内存，之后调用构造函数，来填充对象的域，也叫对象的初始化&lt;br&gt;​        clone分配的内存和原对象相同，再用原对象中各个域填充新对象的域，clone返回之后，新对象被创建&lt;br&gt;​        clone是复制对象；复制对象对象的地址值不同，复制引用对象的地址不同&lt;br&gt;​        clone是浅拷贝；浅拷贝对象字段的字符串对象是同一个，只是把字符串对象的引用拷贝给新对象的字段。深拷贝字符串对象不是同一个，是创建一个新的相同的字符串对象，将这个新字符串对象赋给新对象的字段，要实现深拷贝，要实现cloneable接口，并在clone方法，把该对象引用的其他对象也clone，而且被引用的对象也要实现cloneable接口并实现clone方法&lt;/p&gt;
+&lt;h3 id=&quot;14、方法重写和方法重载&quot;&gt;&lt;a href=&quot;#14、方法重写和方法重载&quot; class=&quot;headerlink&quot; title=&quot;14、方法重写和方法重载&quot;&gt;&lt;/a&gt;14、方法重写和方法重载&lt;/h3&gt;&lt;p&gt;​    方法重写：&lt;br&gt;​        方法重写的参数列表和返回类型要求一致&lt;br&gt;​        构造方法不能重写，final声明的方法不能被重写&lt;br&gt;​        访问权限不能比父类更低&lt;br&gt;​        不能比父类抛出更广泛的异常&lt;br&gt;​    方法重载&lt;br&gt;​        方法名一致，参数列表参数的顺序、返回类型、个数不同。&lt;br&gt;​        可以抛出更多的异常、有不同的修饰符&lt;/p&gt;
+&lt;h3 id=&quot;15、Integer和Int的区别，封装类的作用&quot;&gt;&lt;a href=&quot;#15、Integer和Int的区别，封装类的作用&quot; class=&quot;headerlink&quot; title=&quot;15、Integer和Int的区别，封装类的作用&quot;&gt;&lt;/a&gt;15、Integer和Int的区别，封装类的作用&lt;/h3&gt;&lt;p&gt;​    1、Integer是int的封装类，int是基本数据类型&lt;br&gt;​    2、Integer是类，默认值是null，int是基本数据类型，默认值是0&lt;br&gt;​    3、Integer表示对象，是一个引用指向这个对象，而int是直接存储值&lt;br&gt;​    封装类可以进行各种数据类型之间转换,提供了多个与整数相关的操作方法。&lt;/p&gt;
+&lt;h3 id=&quot;16、for循环和foreach循环的区别&quot;&gt;&lt;a href=&quot;#16、for循环和foreach循环的区别&quot; class=&quot;headerlink&quot; title=&quot;16、for循环和foreach循环的区别&quot;&gt;&lt;/a&gt;16、for循环和foreach循环的区别&lt;/h3&gt;&lt;p&gt;​    在固定长度或者长度不需要计算时，for循环的效率高于foreach循环&lt;br&gt;​    在不确定长度或者计算长度有损性能的时候用foreach循环&lt;/p&gt;
+&lt;h3 id=&quot;17、迭代器和for循环的区别&quot;&gt;&lt;a href=&quot;#17、迭代器和for循环的区别&quot; class=&quot;headerlink&quot; title=&quot;17、迭代器和for循环的区别&quot;&gt;&lt;/a&gt;17、迭代器和for循环的区别&lt;/h3&gt;&lt;p&gt;​    迭代器的写法：&lt;br&gt;​        iterator it = set.iterator();&lt;br&gt;​        while(it.hasNext()){&lt;br&gt;​            system.out.println(it.next());&lt;br&gt;​        }&lt;br&gt;​    迭代器只能从头开始遍历、但是可以边遍历边删除&lt;br&gt;​    for循环可以指定位置遍历，性能最高，遍历的过程中不能删除&lt;/p&gt;
+&lt;h3 id=&quot;18、Math函数&quot;&gt;&lt;a href=&quot;#18、Math函数&quot; class=&quot;headerlink&quot; title=&quot;18、Math函数&quot;&gt;&lt;/a&gt;18、Math函数&lt;/h3&gt;&lt;p&gt;​    Math.round(11.5)=12;Math.round(-11.5)=-11(四舍五入)&lt;br&gt;​    Math.ceil(11.5)=12;Math.ceil(-11.5)=-11(向上取整)&lt;br&gt;​    Math.floor(11.5)=11;Math.floor(-11.5)=-12(向下取整)&lt;/p&gt;
+&lt;h1 id=&quot;JVM&quot;&gt;&lt;a href=&quot;#JVM&quot; class=&quot;headerlink&quot; title=&quot;JVM&quot;&gt;&lt;/a&gt;JVM&lt;/h1&gt;&lt;h3 id=&quot;1-JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享&quot;&gt;&lt;a href=&quot;#1-JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享&quot; class=&quot;headerlink&quot; title=&quot;1.JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享&quot;&gt;&lt;/a&gt;1.JVM堆栈方法区放哪些数据，3个区域中那些数据是线程共享&lt;/h3&gt;&lt;p&gt;​    栈区存放基本数据类型、对象的引用，函数调用的现场保留&lt;br&gt;​    堆区存放new（）和构造器创建的对象&lt;br&gt;​    方法区存放常量池和static变量&lt;br&gt;​    只有堆内存的数据是线程共享的&lt;/p&gt;
+&lt;h3 id=&quot;2、四种会话跟踪技术&quot;&gt;&lt;a href=&quot;#2、四种会话跟踪技术&quot; class=&quot;headerlink&quot; title=&quot;2、四种会话跟踪技术&quot;&gt;&lt;/a&gt;2、四种会话跟踪技术&lt;/h3&gt;&lt;p&gt;​    隐藏表单域&lt;br&gt;​    URL重写&lt;br&gt;​    Cookie&lt;br&gt;​    Session&lt;/p&gt;
+&lt;h3 id=&quot;3-现有一个preson类，有3个属性：&quot;&gt;&lt;a href=&quot;#3-现有一个preson类，有3个属性：&quot; class=&quot;headerlink&quot; title=&quot;3.现有一个preson类，有3个属性：&quot;&gt;&lt;/a&gt;3.现有一个preson类，有3个属性：&lt;/h3&gt;&lt;p&gt;​     public class Preson (private String name; private int age;private String sex;}&lt;br&gt;​     请重写此类equal方法，当name和age都一样时，对象相等。&lt;br&gt;​     首先重写hashcode方法&lt;br&gt;​         public int hashcode（）{&lt;br&gt;​            return this.name.hashcode()+this.age*15//使不同的对象有不同的id&lt;br&gt;​         }&lt;br&gt;​      其次重写equal方法&lt;br&gt;​          public boolean equal（Object obj){&lt;br&gt;​              if(this==obj){&lt;br&gt;​                  return true;&lt;br&gt;​              }&lt;br&gt;​              if(!(obj istanceof Student)){&lt;br&gt;​                  return false;&lt;br&gt;​              }&lt;br&gt;​              Student s = (Student) obj;&lt;br&gt;​              return this.name.equals(s.name)&amp;amp;&amp;amp;this.age==s.age&lt;br&gt;​          }&lt;/p&gt;
+&lt;h3 id=&quot;4-描述一下双亲委派机制。&quot;&gt;&lt;a href=&quot;#4-描述一下双亲委派机制。&quot; class=&quot;headerlink&quot; title=&quot;4.描述一下双亲委派机制。&quot;&gt;&lt;/a&gt;4.描述一下双亲委派机制。&lt;/h3&gt;&lt;p&gt;​    根类加载器 jre/lib&lt;br&gt;​    扩展类加载器 jre/lib/ext&lt;br&gt;​    应用程序类加载器 classpath&lt;br&gt;​    自定义类加载器&lt;/p&gt;
+&lt;h3 id=&quot;5、Ajax的基本原理&quot;&gt;&lt;a href=&quot;#5、Ajax的基本原理&quot; class=&quot;headerlink&quot; title=&quot;5、Ajax的基本原理&quot;&gt;&lt;/a&gt;5、Ajax的基本原理&lt;/h3&gt;&lt;p&gt;​    通过XmlHttpRequest对象来向服务器发异步请求、从服务器获得数据，然后使用js操作dom而更新页面&lt;/p&gt;
+&lt;h3 id=&quot;6、assert断言&quot;&gt;&lt;a href=&quot;#6、assert断言&quot; class=&quot;headerlink&quot; title=&quot;6、assert断言&quot;&gt;&lt;/a&gt;6、assert断言&lt;/h3&gt;&lt;p&gt;​    assert是一种调试方式，用于对程序的调试和执行结构的判断，用于保证程序最基本、关键的正确性。对boolean表达式进行检查，如果true程序正确&lt;/p&gt;
+&lt;h3 id=&quot;7、xml定义文档的方式，解析xml的的方式&quot;&gt;&lt;a href=&quot;#7、xml定义文档的方式，解析xml的的方式&quot; class=&quot;headerlink&quot; title=&quot;7、xml定义文档的方式，解析xml的的方式&quot;&gt;&lt;/a&gt;7、xml定义文档的方式，解析xml的的方式&lt;/h3&gt;&lt;p&gt;​    定义文档的方式：dtd、schema&lt;br&gt;​    解析xml的方式：DOM、SAX&lt;br&gt;​        DOM:可以进行CRUD操作，但是占内存&lt;br&gt;​        SAX：不占内存。但是只能进行读操作&lt;/p&gt;
+&lt;h3 id=&quot;8、谈谈反射&quot;&gt;&lt;a href=&quot;#8、谈谈反射&quot; class=&quot;headerlink&quot; title=&quot;8、谈谈反射&quot;&gt;&lt;/a&gt;8、谈谈反射&lt;/h3&gt;&lt;p&gt;​    反射是通过获得类的字节码文件来得到类中的属性和方法，再说一下三种获得字节码文件的方式：class.forname()、类名.class、对象.getclass&lt;/p&gt;
+&lt;h3 id=&quot;注解：&quot;&gt;&lt;a href=&quot;#注解：&quot; class=&quot;headerlink&quot; title=&quot;注解：&quot;&gt;&lt;/a&gt;注解：&lt;/h3&gt;&lt;h3 id=&quot;泛型：&quot;&gt;&lt;a href=&quot;#泛型：&quot; class=&quot;headerlink&quot; title=&quot;泛型：&quot;&gt;&lt;/a&gt;泛型：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;参数化类型，只有在调用时才确认类型&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;9、多线程&quot;&gt;&lt;a href=&quot;#9、多线程&quot; class=&quot;headerlink&quot; title=&quot;9、多线程&quot;&gt;&lt;/a&gt;9、多线程&lt;/h3&gt;&lt;p&gt;​    1、解释线程&lt;br&gt;​    2、线程的生命周期&lt;br&gt;​    3、实现多线程的方法&lt;/p&gt;
+&lt;h3 id=&quot;13、having和where的区别&quot;&gt;&lt;a href=&quot;#13、having和where的区别&quot; class=&quot;headerlink&quot; title=&quot;13、having和where的区别&quot;&gt;&lt;/a&gt;13、having和where的区别&lt;/h3&gt;&lt;p&gt;​    1、having一般跟在分组条件前面，where一般在分组条件后面&lt;br&gt;​    2、having后面可以跟聚合函数，where后面不可以&lt;br&gt;14、死锁&lt;br&gt;​    两个及两个以上的线程在执行期间、由于竞争资源或者彼此通信而造成一种阻塞的现象。&lt;br&gt;​    四个必要条件：&lt;br&gt;​        互斥条件&lt;/p&gt;
+&lt;h3 id=&quot;1、业务权限问题&quot;&gt;&lt;a href=&quot;#1、业务权限问题&quot; class=&quot;headerlink&quot; title=&quot;1、业务权限问题&quot;&gt;&lt;/a&gt;1、业务权限问题&lt;/h3&gt;&lt;p&gt;​    1、你的权限是怎么做的&lt;br&gt;​    2、有几张表，拿几张表，表的关系是如何的&lt;br&gt;​    3、如何根据角色 查询当前角色具有的权限 &lt;/p&gt;
+&lt;h3 id=&quot;2、-Autowire与-Resource的区别&quot;&gt;&lt;a href=&quot;#2、-Autowire与-Resource的区别&quot; class=&quot;headerlink&quot; title=&quot;2、@Autowire与@Resource的区别&quot;&gt;&lt;/a&gt;2、@Autowire与@Resource的区别&lt;/h3&gt;&lt;p&gt;​    @Autowire&lt;br&gt;​        是spring提供的&lt;br&gt;​        默认按照类型进行装配&lt;br&gt;​            如果发现满足这个类型有两个及以上，就会按照名称装配&lt;br&gt;​            如果也没有发现对应名称，就直接报错&lt;br&gt;​            @Qualifier(“userinfoServiceImpl”)  指定我是用那个类的名称作为当前对象的注入。 有两个以上采用。&lt;br&gt;​    @Resource&lt;br&gt;​        是jdk提供的&lt;br&gt;​        默认按照名称进行装配&lt;br&gt;​            装配失败，会按照类型进行装配&lt;/p&gt;
+&lt;h3 id=&quot;3、java获取方法的参数名&quot;&gt;&lt;a href=&quot;#3、java获取方法的参数名&quot; class=&quot;headerlink&quot; title=&quot;3、java获取方法的参数名&quot;&gt;&lt;/a&gt;3、java获取方法的参数名&lt;/h3&gt;&lt;p&gt;​    &lt;!--Java无法通过反射获取方法的参数名--&gt;&lt;br&gt;​    1、JavaAssiat 能够对字节码进行编程&lt;br&gt;​    2、Spring提供LocalVariableTableParameterNameDiscoverer，能够读取字节码得到参数名称&lt;br&gt;​    3、jdk1.8设置之后也可以读取到参数名称&lt;/p&gt;
+&lt;h3 id=&quot;4、两表联查的方式&quot;&gt;&lt;a href=&quot;#4、两表联查的方式&quot; class=&quot;headerlink&quot; title=&quot;4、两表联查的方式&quot;&gt;&lt;/a&gt;4、两表联查的方式&lt;/h3&gt;&lt;p&gt;​    1、嵌套结果&lt;br&gt;​        优点：&lt;br&gt;​            查询的sql语句只有一条&lt;br&gt;​        缺点：&lt;br&gt;​            字段描述多遍，不利于修改&lt;br&gt;​            根本无法递归&lt;br&gt;​    2、嵌套查询&lt;br&gt;​        优点：&lt;br&gt;​            可以实现递归&lt;br&gt;​            字段描述完全可以重用&lt;br&gt;​        缺点：&lt;br&gt;​            查询的sql语句有N条，会造成1+N的问题&lt;br&gt;​            如果使用二级缓存，可以解决1+N的问题&lt;/p&gt;
+&lt;h3 id=&quot;5、关于mysql三大范式的冲突&quot;&gt;&lt;a href=&quot;#5、关于mysql三大范式的冲突&quot; class=&quot;headerlink&quot; title=&quot;5、关于mysql三大范式的冲突&quot;&gt;&lt;/a&gt;5、关于mysql三大范式的冲突&lt;/h3&gt;&lt;p&gt;​    1、所有字段尽量赋初始值，不要有字段为null，虽然和三大范式冲突，但是可以提高查询效率&lt;br&gt;​    select * from table where id is not null&lt;br&gt;​    这个查询语句会引发全表扫描，不会命中索引&lt;br&gt;​    2、不只通过外键传递依赖&lt;br&gt;​        A；uid uname&lt;br&gt;​        B:cid cname uid （经常uname）&lt;br&gt;​            只要满足uanme永远唯一，且永远不会改变&lt;br&gt;​    3、主键无关性&lt;/p&gt;
+&lt;h3 id=&quot;6、mysql索引&quot;&gt;&lt;a href=&quot;#6、mysql索引&quot; class=&quot;headerlink&quot; title=&quot;6、mysql索引&quot;&gt;&lt;/a&gt;6、mysql索引&lt;/h3&gt;&lt;p&gt;​    索引可以提高程序的查询效率，&lt;br&gt;​    在mysql中的Innodb引擎只支持一种索引，数据结构&lt;strong&gt;B+树&lt;/strong&gt;索引，当你更改数据的时候，只会引发当前节点和相邻节点的引用关系的改变，根本不会导致整个索引表的重排。&lt;strong&gt;所以大量频繁维护的表，适合建立索引&lt;/strong&gt;&lt;br&gt;​    但是B+树索引，适合建立在高基数（重复值较少）的列上&lt;br&gt;​    不适合建立低基数（sex）列上。低基数应该用BitMap位图索引（Mysql没有该引擎）&lt;/p&gt;
+&lt;h3 id=&quot;7、var和let的作用范围&quot;&gt;&lt;a href=&quot;#7、var和let的作用范围&quot; class=&quot;headerlink&quot; title=&quot;7、var和let的作用范围&quot;&gt;&lt;/a&gt;7、var和let的作用范围&lt;/h3&gt;&lt;p&gt;​    var的作用域范围是函数体，声明变量一定要加var&lt;br&gt;​    不加var的变量是全局变量&lt;br&gt;​    在函数内的判断中加var，var在整个函数中有效&lt;br&gt;​    let（ES6）的作用域范围是{}内部&lt;br&gt;​    const与了let的作用域是一样的，不同的是const变量一旦被赋值，就不能再改变&lt;br&gt;​    但是这并不意味着使用const声明的变量本身不可变，只是说它不可被再次赋值了&lt;/p&gt;
+&lt;h3 id=&quot;8、缓存的适用性及不适用性&quot;&gt;&lt;a href=&quot;#8、缓存的适用性及不适用性&quot; class=&quot;headerlink&quot; title=&quot;8、缓存的适用性及不适用性&quot;&gt;&lt;/a&gt;8、缓存的适用性及不适用性&lt;/h3&gt;&lt;p&gt;​    1：金融性数据禁止使用缓存。&lt;br&gt;​    2：关键性数据禁止使用缓存。&lt;br&gt;​    3：私有数据禁止使用缓存。Userinfo&lt;br&gt;​    4：维护过于频繁的数据不要使用二级缓存。&lt;/p&gt;
+&lt;h3 id=&quot;9、MyBatis和Hibernat二级缓存的区别&quot;&gt;&lt;a href=&quot;#9、MyBatis和Hibernat二级缓存的区别&quot; class=&quot;headerlink&quot; title=&quot;9、MyBatis和Hibernat二级缓存的区别&quot;&gt;&lt;/a&gt;9、MyBatis和Hibernat二级缓存的区别&lt;/h3&gt;&lt;p&gt;​    Hibernate：&lt;br&gt;​        Hibernate的二级缓存是对对象而言&lt;br&gt;​        内部维系了一个Map&amp;lt;key,Value&amp;gt;&lt;br&gt;​            session.get(1);&lt;br&gt;​            session.get(1);&lt;br&gt;​            能够命中缓存&lt;br&gt;​            ===============================================&lt;br&gt;​            List list = session.createQuery(“from userinfo”).list();//即时加载&lt;br&gt;​            session.get(1);&lt;br&gt;​            能够命中：第一句话已经把查出来所有数据，都放到二级缓存中去了&lt;br&gt;​            ================================================&lt;br&gt;​            List list = session.createQuery(“from userinfo”).list();//即时加载&lt;br&gt;​            List list = session.createQuery(“from userinfo”).list();&lt;br&gt;​            不会命中缓存,害怕有数据的更改。如果你非要命中缓存，请你使用查询缓存。&lt;br&gt;​            =================================================&lt;br&gt;​            List list = session.createQuery(“from userinfo”).list();//即时加载&lt;br&gt;​            query.setCacheAble(true);&lt;br&gt;​            List list = session.createQuery(“from userinfo”).list();&lt;br&gt;​            query.setCacheAble(true);&lt;br&gt;​            xml在开启查询缓存，才能命中。&lt;br&gt;​        readonly:[true|false]&lt;br&gt;​            是否只读，能否可以修改&lt;br&gt;​    Mybatis&lt;br&gt;​        Mybatis的二级缓存是对NameSpace而言&lt;br&gt;​        Map（key（NameSpace+SQL））&lt;br&gt;​            mapper.findAll();&lt;br&gt;​            mapper.findById();//不会命中缓存&lt;br&gt;​            ===============================================&lt;br&gt;​            对这个命名空间下的任何的数据操作(insert,update,delete)，都会引发当前整个&lt;br&gt;​            NameSpace下的所有的缓存失效。&lt;br&gt;​            Bug:你更改A表，没有清空B表的缓存。&lt;br&gt;​                ThreadA: 查A表，关联了B表。 它的NameSpace是A。放入Cache。&lt;br&gt;​                       潘峰—–》如花&lt;br&gt;​                ThreadB: 修改B。NameSpace为B的缓存全部失效，重新查询。&lt;br&gt;​                       把如花改成了高鹏&lt;br&gt;​                此时：ThreadA里面的B是谁？&lt;br&gt;​                       老潘认为他的女朋友是谁？&lt;br&gt;​            解决方案：&lt;br&gt;​                1：cache的超时&lt;br&gt;​                2：用Redis更改A的时候，也清空B。&lt;br&gt;​        &lt;!-- Size 缓存的的大小  flushInterval隔多久数据同步一次 LRU最近最少，FIFO先进先出--&gt;&lt;br&gt;​        &lt;cache size=&quot;5000&quot; flushInterval=&quot;5000&quot; eviction=&quot;LRU&quot; readOnly=&quot;true&quot;&gt;&lt;/cache&gt;&lt;br&gt;​        readonly[true|false]:&lt;br&gt;​            readonly:true&lt;br&gt;​                给所有用户返回同一个对象&lt;br&gt;​            readonly：false&lt;br&gt;​                给所有用户返回对象的克隆clone&lt;/p&gt;
+&lt;h3 id=&quot;10、三种Mybatis缓存可能发生的问题&quot;&gt;&lt;a href=&quot;#10、三种Mybatis缓存可能发生的问题&quot; class=&quot;headerlink&quot; title=&quot;10、三种Mybatis缓存可能发生的问题&quot;&gt;&lt;/a&gt;10、三种Mybatis缓存可能发生的问题&lt;/h3&gt;&lt;p&gt;​    &lt;strong&gt;1、缓存穿透&lt;/strong&gt;&lt;br&gt;​        假如我请求一个不存在的值。比如id=-1.&lt;br&gt;​        意味着先查询数据库，数据库没有找到。返回null。&lt;br&gt;​        如果再来一遍呢？&lt;br&gt;​            默认仍然先查数据库，数据库没有找到。返回null。&lt;br&gt;​            可以使劲查询，至到把服务器 down。&lt;br&gt;​        Mybatis3.5.1已经修复了这个问题。&lt;br&gt;​            解决问题的方案：&lt;br&gt;​                1：查不到，Map(key,null)&lt;br&gt;​                2: 布隆过滤器。&lt;br&gt;​    &lt;strong&gt;2、缓存击穿&lt;/strong&gt;&lt;br&gt;​        缓存中没有这个数据，但是数据库中是有这个数据的。&lt;br&gt;​        但是同一时间的并发量是巨大的（高并发）。所有的线程都没有从缓存&lt;br&gt;​        中命中数据，但同时所有的线程，都从数据库中开始查询数据。这一瞬间，就有可能&lt;br&gt;​        导致服务器的坍塌。&lt;br&gt;​        解决方案：&lt;br&gt;​            1：上同步锁。&lt;br&gt;​            2：上Redis。&lt;br&gt;​    &lt;strong&gt;3、缓存雪崩&lt;/strong&gt;&lt;br&gt;​        缓存都有一个超时时间，如果你走默认的，所有的超时时间都是一致的。&lt;br&gt;​        在达到某一个时间点的时候，所有的缓存全部失效。&lt;br&gt;​        整个项目的所有线程（用户），都会命中缓存失效，全部重新查询数据库。&lt;br&gt;​        有可能导致整个系统全部宕机。&lt;br&gt;​        解决方案：：&lt;br&gt;​            1：设置超时时间不一致，甚至随机数&lt;br&gt;​            2：上Redis&lt;/p&gt;
+&lt;h3 id=&quot;11、Lambda表达式&quot;&gt;&lt;a href=&quot;#11、Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;11、Lambda表达式&quot;&gt;&lt;/a&gt;11、Lambda表达式&lt;/h3&gt;&lt;p&gt;​    作用：简洁代码&lt;br&gt;​    前提：内部类中的方法只有一个&lt;br&gt;​    &lt;!--匿名内部类--&gt;&lt;br&gt;​    comparator&lt;Integer&gt; cpt = new Comparator&lt;Integer&gt;(){&lt;br&gt;​        @Override&lt;br&gt;​        public int compare(Integer x,Integer y){&lt;br&gt;​            return Integer.comparator(x,y);&lt;br&gt;​        }&lt;br&gt;​    }&lt;br&gt;​    &lt;!--Lambda表达式--&gt;&lt;br&gt;​    Comparator&lt;Integer&gt; cpt2 = (x,y) -&amp;gt; Integer.comparator(x,y);&lt;/p&gt;
+&lt;h3 id=&quot;17、为什么返回类型不能区分重载&quot;&gt;&lt;a href=&quot;#17、为什么返回类型不能区分重载&quot; class=&quot;headerlink&quot; title=&quot;17、为什么返回类型不能区分重载&quot;&gt;&lt;/a&gt;17、为什么返回类型不能区分重载&lt;/h3&gt;&lt;p&gt;​    调用时不能确定指定类型信息，编译器不知道调用那个函数&lt;/p&gt;
+&lt;h3 id=&quot;19、servlet的生命周期&quot;&gt;&lt;a href=&quot;#19、servlet的生命周期&quot; class=&quot;headerlink&quot; title=&quot;19、servlet的生命周期&quot;&gt;&lt;/a&gt;19、servlet的生命周期&lt;/h3&gt;&lt;p&gt;​    a.在客户端第一次请求servlet的时候，servlet容器（tomcat）就会实例化servlet。该servlet的实例会一直驻留在内存中，以便响应后续请求。&lt;br&gt;​    b. 在servlet被实例化之后，servlet容器就调用servlet的init方法，该方法在整个servlet生命周期之间只执行一次&lt;br&gt;​    c. 在servlet每次接收到请求的时候，servlet容器都会调用servlet的service方法该方法接收请求，并做出响应。&lt;br&gt;​    d. 在web应用即将被卸载的时候，servlet容器就会调用servlet的destory方法，该方法在整个servlet生命周期之间只执行一次&lt;br&gt;​    补充：如果在配置servlet的时候，添加了&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;，那么servlet将会在web应用被部署的时候，就被servlet容器所实例化！&lt;/p&gt;
+&lt;h3 id=&quot;20、静态包含和动态包含的区别&quot;&gt;&lt;a href=&quot;#20、静态包含和动态包含的区别&quot; class=&quot;headerlink&quot; title=&quot;20、静态包含和动态包含的区别&quot;&gt;&lt;/a&gt;20、静态包含和动态包含的区别&lt;/h3&gt;&lt;p&gt;​    静态包含&amp;lt;%@include file=”xxx.jsp”%&amp;gt;是jsp的编译指令，动态包含&amp;lt;jsp:include page=”xxx.jsp”&amp;gt;是动作指令&lt;br&gt;​    静态包含是发生在jsp转化为servlet时期，动态包含发生在编译时期，&lt;br&gt;​    静态包含只会产生一个class文件，动态包含可以产生多个&lt;br&gt;​    使用静态包含，包含页面和被包含页面的request对象为同一对象，因为静态包含只是将被包含的页面的内容复制到包含的页面中去；而动态包含包含页面和被包含页面不是同一个页面，被包含的页面的request对象可以取到的参数范围要相对大些，不仅可以取到传递到包含页面的参数，同样也能取得在包含页面向下传递的参数 &lt;/p&gt;
+&lt;h3 id=&quot;21、多线程有几种实现方案，分别是哪几种？&quot;&gt;&lt;a href=&quot;#21、多线程有几种实现方案，分别是哪几种？&quot; class=&quot;headerlink&quot; title=&quot;21、多线程有几种实现方案，分别是哪几种？&quot;&gt;&lt;/a&gt;21、多线程有几种实现方案，分别是哪几种？&lt;/h3&gt;&lt;p&gt;​    两种，继承Thread类，实现Runnable接口&lt;/p&gt;
+&lt;h3 id=&quot;22、同步有几种方式，分别是什么&quot;&gt;&lt;a href=&quot;#22、同步有几种方式，分别是什么&quot; class=&quot;headerlink&quot; title=&quot;22、同步有几种方式，分别是什么?&quot;&gt;&lt;/a&gt;22、同步有几种方式，分别是什么?&lt;/h3&gt;&lt;p&gt;​    两种，同步代码块，同步方法&lt;/p&gt;
+&lt;h3 id=&quot;23、启动一个线程是run-还是start-，他们的区别？&quot;&gt;&lt;a href=&quot;#23、启动一个线程是run-还是start-，他们的区别？&quot; class=&quot;headerlink&quot; title=&quot;23、启动一个线程是run()还是start()，他们的区别？&quot;&gt;&lt;/a&gt;23、启动一个线程是run()还是start()，他们的区别？&lt;/h3&gt;&lt;p&gt;​    run():封装了被线程执行的代码，直接调用仅仅是普通方法的调用&lt;br&gt;​    start():启动线程，并由JVM自动调用run()方法&lt;/p&gt;
+&lt;h3 id=&quot;24、sleep-和wait-方法的区别&quot;&gt;&lt;a href=&quot;#24、sleep-和wait-方法的区别&quot; class=&quot;headerlink&quot; title=&quot;24、sleep()和wait()方法的区别&quot;&gt;&lt;/a&gt;24、sleep()和wait()方法的区别&lt;/h3&gt;&lt;p&gt;​    sleep():不释放锁&lt;br&gt;​    wait():释放锁&lt;/p&gt;
+&lt;h3 id=&quot;25、为什么wait-、notify-、notifyAll-等方法都定义在Object类中&quot;&gt;&lt;a href=&quot;#25、为什么wait-、notify-、notifyAll-等方法都定义在Object类中&quot; class=&quot;headerlink&quot; title=&quot;25、为什么wait()、notify()、notifyAll()等方法都定义在Object类中&quot;&gt;&lt;/a&gt;25、为什么wait()、notify()、notifyAll()等方法都定义在Object类中&lt;/h3&gt;&lt;p&gt;​    因为这些方法的调用时、是依赖于锁对象，而同步代码块的锁对象是任意锁。&lt;br&gt;​    而object代码任意的对象，所以，定义在这里面&lt;/p&gt;
+&lt;h3 id=&quot;26、线程的生命周期图&quot;&gt;&lt;a href=&quot;#26、线程的生命周期图&quot; class=&quot;headerlink&quot; title=&quot;26、线程的生命周期图&quot;&gt;&lt;/a&gt;26、线程的生命周期图&lt;/h3&gt;&lt;p&gt;​    新建——就绪——运行——阻塞——死亡&lt;/p&gt;
+&lt;h3 id=&quot;27、Session和Cookie的区别&quot;&gt;&lt;a href=&quot;#27、Session和Cookie的区别&quot; class=&quot;headerlink&quot; title=&quot;27、Session和Cookie的区别&quot;&gt;&lt;/a&gt;27、Session和Cookie的区别&lt;/h3&gt;&lt;p&gt;​        1、Session的数据存放在服务器端，Cookie的数据存放在客户端&lt;br&gt;​        2、Session数据没有大小限制，Cookie有&lt;br&gt;​        3、Session安全，Cookie不安全&lt;br&gt;​        4、Session可以存放任何java数据，而Cookie只能存放String字符串&lt;/p&gt;
+&lt;h3 id=&quot;28、forward跳转和redirect重定向的区别&quot;&gt;&lt;a href=&quot;#28、forward跳转和redirect重定向的区别&quot; class=&quot;headerlink&quot; title=&quot;28、forward跳转和redirect重定向的区别&quot;&gt;&lt;/a&gt;28、forward跳转和redirect重定向的区别&lt;/h3&gt;&lt;p&gt;​    forward是服务器内部跳转，可以带参数&lt;br&gt;​    redirect是请求二次服务器，url地址不同，不可以带参数&lt;br&gt;10、mysql数据锁&lt;br&gt;​    锁的作用：在数据库并发操作下，保证数据的完整性和一致性&lt;br&gt;11、js如何向数组添加元素&lt;br&gt;​    let myArray=[11,22,33];&lt;br&gt;​    console.log(‘原数组：’,myArray);&lt;br&gt;​    myArray.push(44,55);&lt;br&gt;​    console.log(‘用push在数组后面插入元素：’,myArray);&lt;br&gt;​    myArray.unshift(66,77);&lt;br&gt;​    console.log(‘用unshift在数组前面插入元素：’,myArray);&lt;br&gt;​    myArray.splice(2,0,’肾虚少年’);&lt;br&gt;​    console.log(‘用splice在数组指定位置插入元素：’,myArray);&lt;br&gt;​        &lt;/p&gt;
+&lt;h1 id=&quot;SpringMVC&quot;&gt;&lt;a href=&quot;#SpringMVC&quot; class=&quot;headerlink&quot; title=&quot;SpringMVC&quot;&gt;&lt;/a&gt;SpringMVC&lt;/h1&gt;&lt;p&gt;​    1、描述SpringMVC请求处理与响应流程，以及核心组件&lt;br&gt;​        核心组件：&lt;br&gt;​            前端控制器&lt;br&gt;​            映射器处理器&lt;br&gt;​            适配器处理器&lt;br&gt;​            视图解析器&lt;br&gt;​    2、一个请求到SpringMVC，首先必须经过前端控制器DispatcherServlet吗？&lt;br&gt;​        可以配置的。&lt;br&gt;​        在web.xml文件中配置如下信息：&lt;br&gt;​        &lt;servlet-mapping&gt;&lt;br&gt;​            &lt;servlet-name&gt;default&lt;/servlet-name&gt;&lt;br&gt;​            &lt;url-pattern&gt;&lt;em&gt;.html&lt;/url-pattern&gt;&lt;br&gt;​        &lt;/servlet-mapping&gt;&lt;br&gt;​        以上配置可以实现&lt;/em&gt;.html文件不经过DispatcherServlet，可以直接找到*.html资源&lt;br&gt;​    3、springboot比springmvc的优势在哪里&lt;br&gt;​        springmvc是基于spring的一个mvc框架，&lt;br&gt;​    优势是：实现了自动装配，降低项目搭建的困难度&lt;br&gt;​    4.SpringMVC常用注解和作用&lt;br&gt;​        @RequsetMapper(“”)：url路径&lt;br&gt;​        @Controller():表明这是控制器&lt;br&gt;​        @RequsetBody:接收请求的json数据，将json数据转换为Java对象&lt;br&gt;​        @ResponseBody:将返回对象转换json数据响应客户&lt;br&gt;​        @RequestParam:形参名和请求参数名一致&lt;br&gt;​    5、springmvc controller返回值类型，具体作用&lt;br&gt;​        ModelAndView&lt;br&gt;​        String&lt;br&gt;​        void&lt;br&gt;​    6、谈一下springmvc&lt;br&gt;​        springmvc是spring模式的web层框架，由四大核心组件构成，陈述原理&lt;/p&gt;
+&lt;h1 id=&quot;Mybatis&quot;&gt;&lt;a href=&quot;#Mybatis&quot; class=&quot;headerlink&quot; title=&quot;Mybatis&quot;&gt;&lt;/a&gt;Mybatis&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;1.Mybatis怎么配一对一和多对多
+    resultMap/resulttype
+    association/collection
+    javatype/oftype
+2、介绍一下MyBatis?
+    Mybatis是一个优秀的持久层框架，它封装了jdbc操作数据库的过程，只需要写sql语句，
+    mybatis通过读取配置配置文件，创建SqlSessionFactory会话工厂，然后在创建Sqlsession，通过Sqlsession来操作数据库，
+    SqlSession是通过底层的Executor执行器接口来操作数据库，Exceutor执行器处理的Sql信息是封装到一个底层对象的MappedStatement中，
+4、MyBatis生成的xml都有哪些标签？
+    requestmap、select、result、insert、update、delete
+5、Mybatis 返回类型用什么指定
+    resultType指定输出的Java类型
+11、Mybatis 传入参数 类型用什么指定
+    parameterType指定输入参数的java类型
+6、resultMap和resultType的区别？
+    resultType：查询的列名和映射的pojo属性名完全一致
+    resultMap：查询的列名和映射的pojo属性名可以不一致
+7、谈谈Mybatis的缓存？
+    一级缓存：
+        存入SqlSession中，数据结构是HashMap，当SqlSession消失时，mybatis的一级缓存也会消失
+        当调用SqlSession的修改、添加、删除，
+    二级缓存：
+        Mybatis中SqlSessionFactory对象的缓存，由同一个SqlSessionFactory对象创建的SqlSession共享其缓存
+        第一步在主配置文件中开启二级缓存
+            &amp;lt;settings&amp;gt;
+                &amp;lt;setting name=&amp;quot;cacheEnabled&amp;quot; value=&amp;quot;true&amp;quot;&amp;gt;
+            &amp;lt;/settings&amp;gt;
+        第二步在映射配置文件中
+            &amp;lt;cache /&amp;gt;
+        第三步在select标签中使用属性usecache=&amp;quot;true&amp;quot;
+8、redis替代mybatis的二级缓存
+9、数据库查询到一个空id或者null，mybatis如何判断的？
+10、mybatis xml namespace里面写的是啥，什么作用。
+    mapper接口的类路径
+13、如何查询最后一条数据：mybatis
+15、mybatis的延迟加载是什么，怎么用
+    只想获取某个字段，就用延迟加载，只能进行属性级别的延迟加载
+    首先在主配置文件打开延迟加载
+    &amp;lt;settings&amp;gt;
+        &amp;lt;setting name=&amp;quot;lazyLoadingEnabled&amp;quot; value=&amp;quot;true&amp;quot;&amp;gt;
+        &amp;lt;setting name=&amp;quot;aggressiveLazyLoading&amp;quot; value=&amp;quot;false&amp;quot;&amp;gt;
+    &amp;lt;/settings&amp;gt;
+    映射配置文件中
+    &amp;lt;collection property=&amp;quot;emps&amp;quot; ofType=&amp;quot;Emp&amp;quot; select=&amp;quot;com.woniuxy.l_lazyload.EmpMapper。findSomeByDid&amp;quot; column=&amp;quot;did&amp;quot;&amp;gt;
+16、mybatis的主配置文件配置了什么？
+    数据源、事务、别名、映射配置文件的位置
+17、#{}和${}的区别
+    #{}在sql语句中有单引号，${}没有单引号
+    #{}底层是preparedStatment，不会引发sql注入，${}底层是Statment，会引发sql注入
+18、mapper的开发规范
+    1、mapper接口的全名与mapper映射文件的namespace的值相同
+    2、mapper接口的方法名与mapper映射文件的id的值相同
+    3、mapper接口的方法参数与mapper映射文件的parameterType的值相同
+    4、mapper接口的返回类型与mapper映射文件的resultType的值相同
+19、mybatis mapper绑定的原理
+    Mybatis会自动的为mapper接口生成动态代理实现类。&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;SpringBoot&quot;&gt;&lt;a href=&quot;#SpringBoot&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot&quot;&gt;&lt;/a&gt;SpringBoot&lt;/h1&gt;&lt;p&gt;​    1、谈一下springBoot&lt;br&gt;​        我觉的spingboot是一个整合工具，它可以自动装配，降低了搭建环境的难度&lt;br&gt;​        内置web服务器&lt;br&gt;​        简化了maven配置&lt;br&gt;​        无需配置xml，导入jar包即可&lt;br&gt;​    2.Springboot自动装配原理&lt;br&gt;​        @SpringBootApplication注解中的@EnableAutoConfigure中的@Import中的selectImports方法返回了一个全类名的数组，全类名来源于spring-boot-autoConfigure中的spring.factories,&lt;/p&gt;
+&lt;h1 id=&quot;Spring&quot;&gt;&lt;a href=&quot;#Spring&quot; class=&quot;headerlink&quot; title=&quot;Spring&quot;&gt;&lt;/a&gt;Spring&lt;/h1&gt;&lt;p&gt;​    1、谈谈spring&lt;br&gt;​        spring是为了解决企业应用开发的复杂性而创建的，是一个轻量级的控制反转和面向切面的容器框架&lt;br&gt;​    2、Spring在选择用JDK动态代理还是CGLiB动态代理的依据和区别&lt;br&gt;​        jdk实现了接口的类，是用反射生成一个匿名子类，&lt;br&gt;​        cglib没有实现接口的类，使用asm开源包，将被代理对象加载，通过修改字节码文件生成子类&lt;br&gt;​    3、spring aop实现原理&lt;br&gt;​        动态代理&lt;br&gt;​    4、spring template&lt;br&gt;​        是一种操作数据库的技术、对jdbc做了封装，简化了数据库的操作，能够把数据对象映射成实体类。&lt;br&gt;​    5、spring注解&lt;br&gt;​        @Component&lt;br&gt;​        @Repository&lt;br&gt;​        @Service&lt;br&gt;​        @Controller&lt;br&gt;​        @Autowired&lt;br&gt;​        @Resource&lt;br&gt;​    6、spring的注入有几种&lt;br&gt;​        构造方法&lt;br&gt;​        setter方法&lt;br&gt;​        p命名空间注入&lt;br&gt;​        集合注入&lt;br&gt;​        基于注解的注入&lt;br&gt;​    7、spring默认装配吗&lt;br&gt;​        不默认装配&lt;br&gt;​    8、Spring和SpringBoot的区别&lt;br&gt;​        springboot是spring的拓展，使得开发和部署更加方便&lt;br&gt;​        无需配置复杂的xml，只需导入相关jar包，&lt;br&gt;​        内嵌了Web服务器&lt;br&gt;​        提供POM、简化了Maven配置&lt;br&gt;​    9、Bean的配置&lt;br&gt;​        全类名的反射&lt;br&gt;​        静态工厂&lt;br&gt;​        实例工厂&lt;br&gt;​    10、spring的事务&lt;br&gt;​        事务的特性&lt;br&gt;​            原子性&lt;br&gt;​            一致性&lt;br&gt;​            隔离性&lt;br&gt;​            持久性&lt;br&gt;​        隔离级别&lt;br&gt;​            读未提交&lt;br&gt;​            读已提交&lt;br&gt;​            可重复读&lt;br&gt;​            串行&lt;br&gt;​        传播行为：&lt;br&gt;​            &lt;strong&gt;1、PROPAGATION_REQUIRED：&lt;/strong&gt;如果当前没有事务，就创建一个新事务，如果当前存在事务，就加入该事务，该设置是最常用的设置。&lt;br&gt;​            2、PROPAGATION_SUPPORTS：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就以非事务执行。‘&lt;br&gt;​            3、PROPAGATION_MANDATORY：支持当前事务，如果当前存在事务，就加入该事务，如果当前不存在事务，就抛出异常。&lt;br&gt;​            &lt;strong&gt;4、PROPAGATION_REQUIRES_NEW：&lt;/strong&gt;创建新事务，无论当前存不存在事务，都创建新事务。&lt;br&gt;​            5、PROPAGATION_NOT_SUPPORTED：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。&lt;br&gt;​            6、PROPAGATION_NEVER：以非事务方式执行，如果当前存在事务，则抛出异常。&lt;br&gt;​            &lt;strong&gt;7、PROPAGATION_NESTED：&lt;/strong&gt;如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。&lt;br&gt;​    11、静态代理和动态代理的区别&lt;br&gt;​        静态代理只能代理一个类，动态代理可以代理一个接口下的多个接口类&lt;br&gt;​        静态代理事先就知道要代理那个类，动态代理在运行时才知道&lt;br&gt;​    12、jdk动态代理和cglib动态代理的区别&lt;br&gt;​        jdk是通过反射机制生成一个实现接口的匿名子类&lt;br&gt;​        cglib是通过asm开源包，将被代理对象类加载进来，通过修改字节码文件生成子类&lt;br&gt;​        实现了接口，就可以用jdk动态代理，也可以强制使用cglib&lt;br&gt;​        如果没有实现接口，就必须使用cglib&lt;br&gt;​    13、spring的好处&lt;br&gt;​        1、方便解耦，简化开发，&lt;br&gt;​        2、AOP编程的支持&lt;br&gt;​        3、声明式事务的支持&lt;br&gt;​        4、spring对junit4支持，方便程序测试&lt;br&gt;​        5、方便集成各种优秀框架&lt;/p&gt;
     
     </summary>
     
