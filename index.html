@@ -1,541 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
 <head>
-    <meta charset="utf-8" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-    
+<link rel="stylesheet" href="/css/main.css">
 
-    
-    <title>Hexo</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.4.3',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="Ī������">
+<meta property="og:type" content="website">
+<meta property="og:title" content="�Ϻ�������">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en">
+<meta property="og:site_name" content="�Ϻ�������">
+<meta property="og:description" content="Ī������">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-    
 
-    
-        <link rel="alternate" href="/" title="Hexo" type="application/atom+xml" />
-    
+<link rel="canonical" href="http://yoursite.com/">
 
-    
 
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
-    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
 
-    <link rel="stylesheet" href="/css/style.css">
+  <title>�Ϻ�������</title>
+  
 
-    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    
-        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-    
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body>
-    <div id="wrap">
-        <header id="header">
-    <div id="header-outer" class="outer">
-        <div class="container">
-            <div class="container-inner">
-                <div id="header-title">
-                    <h1 class="logo-wrap">
-                        <a href="/" class="logo"></a>
-                    </h1>
-                    
-                </div>
-                <div id="header-inner" class="nav-container">
-                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-                    <div class="nav-container-inner">
-                        <ul id="main-nav">
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Home</a>
-                                </li>
-                            
-                                        
-                                    
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
-                                </li>
-                            
-                        </ul>
-                        <nav id="sub-nav">
-                            <div id="search-form-wrap">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-</div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">�Ϻ�������</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-</header>
-        <div class="container">
-            <div class="main-body container-inner">
-                <div class="main-body-inner">
-                    <section id="main">
-                        <div class="main-body-header">
-    <h1 class="header">
-    
-    <em class="page-title-link" data-url="home">Home</em>
-    </h1>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
 </div>
 
-                        <div class="main-body-content">
-                            
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
 
     
-    
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="thumbnail">
-    
-    
-        <span style="background-image:url(C:%5CUsers%5Cma%5CDesktop%5Cjava%E7%AC%94%E8%AE%B0%5Cimg%5C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97.bmp)" alt="Java基础核心知识点整理" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">0</span>
-    
-</span>
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-    
-</a>
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-        
-        <div class="article-meta">
-            <div class="category">
+          <div class="content">
             
-            </div>
-            <div class="date"><time datetime="2019-11-01T05:13:13.812Z" itemprop="datePublished">2019-11-01</time></div>
-        </div>
+
+  <div class="posts-expand">
         
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">Java基础核心知识点整理</a>
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="Ī������">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="�Ϻ�������">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">Java基础核心知识点整理</a>
         </h1>
-    
 
-        <p class="article-excerpt">
-            Java基础核心知识点整理1、static静态​    随着类的加载而加载，可以通过类名调用
-2、final常量​    常量名必须大写​    常量可以首先声明，再进行赋值，但是只能赋值一次，但是如果常量作为成员量使用，必须在声明时同时赋值，因为JVM会默认对成员量赋值
-3、构造方法、静态块和代码块​    构造方法：​        实例化类时运行​        是与类同名且没有返回值类型的
-        </p>
-    </div>
-</article>
-    
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/11/01/java/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/11/01/java/">0</span>
-    
-</span>
+              <time title="Created: 2019-11-01 13:13:13" itemprop="dateCreated datePublished" datetime="2019-11-01T13:13:13+08:00">2019-11-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-23 13:02:39" itemprop="dateModified" datetime="2019-10-23T13:02:39+08:00">2019-10-23</time>
+              </span>
 
+          
 
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-11-01T05:08:50.000Z" itemprop="datePublished">2019-11-01</time></div>
         </div>
-        
+      </header>
+
     
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/11/01/java/">java</a>
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Java基础核心知识点整理"><a href="#Java基础核心知识点整理" class="headerlink" title="Java基础核心知识点整理"></a>Java基础核心知识点整理</h1><h3 id="1、static静态"><a href="#1、static静态" class="headerlink" title="1、static静态"></a>1、static静态</h3><p>​    随着类的加载而加载，可以通过类名调用</p>
+<h3 id="2、final常量"><a href="#2、final常量" class="headerlink" title="2、final常量"></a>2、final常量</h3><p>​    常量名必须大写<br>​    常量可以首先声明，再进行赋值，但是只能赋值一次，但是如果常量作为成员量使用，必须在声明时同时赋值，因为JVM会默认对成员量赋值</p>
+<h3 id="3、构造方法、静态块和代码块"><a href="#3、构造方法、静态块和代码块" class="headerlink" title="3、构造方法、静态块和代码块"></a>3、构造方法、静态块和代码块</h3><p>​    构造方法：<br>​        实例化类时运行<br>​        是与类同名且没有返回值类型的特殊方法<br>​        不能被static、final、synchronizatied、abstract和native修饰<br>​        可以被重载<br>​        不能被继承，不能被重写<br>​        如果没有声明的构造方法，系统会自动生成无参构造函数，但是声明了带参构造方法，默认构造方法将被覆盖。<br>​    静态代码块<br>​        static{}<br>​        只随着类加载一次<br>​        只能操作静态成员变量<br>​    代码块<br>​        {}<br>​        实例化类时运行<br>​        可以放在任何位置<br>​    运行顺序：静态代码块——代码块——构造方法</p>
+<h3 id="4、封装"><a href="#4、封装" class="headerlink" title="4、封装"></a>4、封装</h3><p>​    隐藏对象的属性和实现细节，仅对外暴露接口，控制在程序中属性的读取和修改的访问级别</p>
+<h3 id="5、继承"><a href="#5、继承" class="headerlink" title="5、继承"></a>5、继承</h3><p>​    提高了代码的重用性和扩展性</p>
+<h3 id="6、多态"><a href="#6、多态" class="headerlink" title="6、多态"></a>6、多态</h3><p>​    父类或者接口的引用变量指向子类或者具体实现类的实例对象，当程序调用方式在运行期间才会动态绑定，就是引用变量指向具体实例对象的方法</p>
+<h3 id="7、String、StringBuffer、StringBulider"><a href="#7、String、StringBuffer、StringBulider" class="headerlink" title="7、String、StringBuffer、StringBulider"></a>7、String、StringBuffer、StringBulider</h3><p>​    String<br>​        String是不可修改的，每次修改都会产生一个新的字符串对象<br>​        String str = “a”;这样创建String实例时，实际是在允许的范围内常量形式创建String实例，首先jvm会在常量池中检查此字符串是否存在，若存在，直接使用其地址，如果不存在，就创建一个新的实例，放进常量池并返回地址，所以多次执行此语句返回的实例是同一个地址<br>​        String str = new String(“a”):这样创建实例，是直接创建实例，放进常量池，并返回地址，所以多次执行此语句返回的实例是不同地址<br>​    StringBuffer<br>​        <strong>线程安全的可变字符序列</strong>。一个类似于 String 的字符串缓冲区，但不能修改。虽然在任意时间点上它都包含某种特定的字符序列，但通过某些方法（append将字符添加到缓冲区末端，insert在指定的点添加字符）调用可以改变该序列的长度和内容，字符缓冲区的默认容量为16，超出默认容量，容量是自动增大<br>​    StringBulider<br>​        线程不安全的可变字符序列，执行效率较高</p>
+<h3 id="8、equals"><a href="#8、equals" class="headerlink" title="8、equals"></a>8、equals</h3><p>​    Object类中的equals方法依然是对两个对象的内存地址进行比较<br>​        public Boolean equals(Object obj){<br>​            return (this==obj)<br>​        }<br>​    String对equals方法进行了重写<br>​    ==：基本数据类型是进行值的比较，引用类型是地址值的比较</p>
+<h3 id="9、集合框架"><a href="#9、集合框架" class="headerlink" title="9、集合框架"></a>9、集合框架</h3><p>​    <strong>Collection</strong><br>​        <strong>List接口</strong>：允许重复的有序(指存储和取出的顺序一致，不是排序)集合，可以通过索引来访问元素，并搜索元素。<br>​            ArrayList<br>​                非同步的（线程不安全的）动态数组，查询快，增删慢，效率高<br>​        <!--线程安全--><br>​        List<String> list = Collections.synchronizedList(new ArrayList<String>());<br>​            LinkedList<br>​                非同步的双向链表，增删快，查询慢。效率高<br>​            vector<br>​                同步的，也就是线程安全的动态数组，查询慢，增删慢，效率低<br>​        <strong>Set接口</strong>：无序不重复元素的集合<br>​            HashSet<br>​                数据结构是哈希表，哈希表保证元素的唯一性<br>​                底层由HashMap实现<br>​                存储自定义对象时，<strong>需要对象类重写hashCode和equals方法</strong><br>​                可以放入null，但是只能放入一个null值<br>​            LinkedHashSet<br>​                数据结构是哈希表和链表，哈希表保证元素的唯一性，链表保证元素有序（存储和取出一致）。<br>​                底层由LinkedHashMap实现<br>​            TreeSet<br>​                底层是二叉树结构（红黑树是一种自平衡的二叉树），排序和唯一<br>​                底层由TreeMap实现<br>​                能够按照某种规则进行排序<br>​                    Comparable自然排序（无参构造）<br>​                        让元素所属类实现Comparable接口并重写compareTo方法<br>​                    Comparator比较器排序<br>​                        让集合的构造方法接收一个比较器接口的子类对象Comparator并重写compar方法<br>​    <strong>Map&lt;k,v&gt;:将键映射到值的对象，一个映射不能包含重复的键；每个键最多只映射到一个值。</strong><br>​        HashMap<br>​        在多线程的操作HashMap会导致死循环，<br>​        所以jdk1.8引入ConcurrentHashMap加入了分段锁<br>​            LinkedHashMap<br>​                输入和输出的顺序相同<br>​        HashTable<br>​    <strong>Map集合和Collection集合的区别？</strong><br>​        Map集合存储元素是成对出现的，是双列集合；collection集合存储元素是单独出现的，是单列集合。<br>​        Map集合的键是唯一的，值是可重复的，Collection的子接口set是唯一的，List是可重复的</p>
+<h3 id="10、数据结构"><a href="#10、数据结构" class="headerlink" title="10、数据结构"></a>10、数据结构</h3><p>​    栈<br>​    <img src="C:%5CUsers%5Cma%5CDesktop%5Cjava%E7%AC%94%E8%AE%B0%5Cimg%5C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97.bmp" alt="数据结构之栈和队列"><br>​    队列<br>​    数组<br>​    <img src="C:%5CUsers%5Cma%5CDesktop%5Cjava%E7%AC%94%E8%AE%B0%5Cimg%5C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%95%B0%E7%BB%84%E5%92%8C%E9%93%BE%E8%A1%A8.bmp" alt=""><br>​    链表<br>​    树<br>​        见集合框架中LinkedHashSet的图<br>​    哈希表<br>​        见集合框架中HashSet的图</p>
+<h3 id="11、异常"><a href="#11、异常" class="headerlink" title="11、异常"></a>11、异常</h3><p>​    Throwable<br>​        error（严重问题）程序本身无法克服和恢复的问题，内存溢出和线程死锁<br>​        exception（问题）<br>​            Runtimeexception(运行时异常)<br>​                软件本身缺陷导致问题，但软件使用者无法克服和恢复<br>​            checkedexception(编译时异常)<br>​                用户可以克服的异常<br>​                处理方式：<br>​                    try{<br>​                        包裹可能发生异常的语句<br>​                    }catch（异常名）{<br>​<br>​                    }finally{<br>​                        无论是否有异常该语句体一定会执行<br>​                    }<br>​                    throws抛出<br>​    throws和throw的区别<br>​        throws：<br>​            用在方法声明难过的后面，跟的是异常类名<br>​            可以跟多个异常类名，用逗号隔开<br>​            表示抛出异常，由该方法的调用者来处理<br>​            throws表示出现异常的一种可能性，并不一定会发生这些异常<br>​        throw<br>​            用在方法体内，跟的是异常对象名<br>​            只能抛出一个异常对象名<br>​            表示抛出异常，由方法体内的语句处理<br>​            throw抛出异常，执行throw则一定抛出某种异常<br>​    </p>
+<h3 id="12、Object类"><a href="#12、Object类" class="headerlink" title="12、Object类"></a>12、Object类</h3><p>​    <strong>public int hashCode</strong>：返回该对象的哈希码值<br>​        哈希值是根据哈希算法计算出来的一个值，这个值和地址值有关，可以理解为逻辑上的地址值<br>​    <strong>public final Class getClass</strong>： 返回此对象运行时的类（字节码）<br>​    <strong>public String toString</strong>：返回此对象的字符串表示getClass().getName() + ‘@’ + Integer.toHexString(hashCode())（哈希码的无符号十六进制，是Integer类下的静态方法）<br>​        这个信息没有意义，所以，建议所有子类都重写此方法<br>​    <strong>public boolean equals（Object obj）</strong>：指示其他某个对象是否与此对象“相等”<br>​        ==：<br>​            基本类型：比较的值是否相同<br>​            引用类型：比较的地址值是否相同<br>​        equals：<br>​            引用类型：默认情况下，比较地址值<br>​            一般会重写该方法，可以自动生成<br>​            @Override<br>​            public boolean equals(Object obj) {<br>​                //为了提高效率<br>​                if(this == obj){<br>​                    return true;<br>​                }<br>​                //为了提供程序的健壮性<br>​                //我先判断一下，obj是不是学生的一个对象，如果是，再做向下转型，如果不是，直接返回false。<br>​                //这个时候，我们要判断的是对象是否是某个类的对象?<br>​                //记住一个格式：对象名 instanceof 类名<br>​                //表示：判断该对象名是否是该类名一个对象<br>​                if(!(obj instanceof Student)){<br>​                    return false;<br>​                }<br>​                //如果是就继续<br>​                Student s = (Student)obj;<br>​                //System.out.println(“同一个对象，还需要向下转型并比较吗?”);<br>​                return this.name.equals(s.name) &amp;&amp; this.age == s.age;<br>​            }<br>​    <strong>protectoed void finalize（）：</strong>当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法，用于垃圾回收<br>​    <strong>protected Object clone（）：</strong>创建并返回此对象的一个副本，clone重新建对象<br>​         Cloneable:此类实现了 Cloneable 接口，以指示 Object.clone() 方法可以合法地对该类实例进行按字段复制。 这个接口是标记接口，告诉我们实现该接口的类就可以实现对象的复制了</p>
+<h3 id="13、泛型"><a href="#13、泛型" class="headerlink" title="13、泛型"></a>13、泛型</h3><p>​    是一种把类型明确的工作推迟到创建对象或者调用方法的时候才去明确的特殊的类型</p>
+<h3 id="14、IO流"><a href="#14、IO流" class="headerlink" title="14、IO流"></a>14、IO流</h3><p>​    根据数据流向分：<br>​        输入流<br>​            从文件到程序<br>​        输出流<br>​            从程序到文件<br>​    根据数据处理单位不同分：<br>​        字节流：以字节为单位进行处理的流<br>​            InputStrem<br>​                FileInputStream<br>​            OutputStream<br>​                FileOutputStream<br>​        字符流：以字符为单位进行处理的流<br>​            Reader<br>​                FileReader<br>​            Writer<br>​                FileWriter<br>​    缓冲流<br>​        增加了内存缓存区，减少了系统直接与硬盘交互传输的次数，提高传输效率<br>​        BufferedInputStream<br>​        BufferedOutputStream<br>​        BufferedReader<br>​        BufferedWriter<br>​        PrintWriter<br>​    序列化流：把对象按照流一样的方法存入文本文件或者在网络中传输 （对象–流数据）ObjectOutputStream<br>​        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(“oos.txt”));<br>​        Person p = new Person(“金高银”);<br>​        oos.writeObject(p);<br>​        oos.close();<br>​    反序列化流：把文本文件中的流对象数据或者网络中的流对象数据还原成对象（流数据——对象）ObjectInputStream<br>​        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(“oos.txt”));<br>​        Object obj = ois.readObject();<br>​        ois.close()</p>
+<h3 id="15、多线程"><a href="#15、多线程" class="headerlink" title="15、多线程"></a>15、多线程</h3><p>​    <strong>并行</strong>：逻辑上同时发生，指在某一个时间内同时运行对各程序<br>​    <strong>并发</strong>：物理上同时发生，指在某一个时间点同时运行多个程序<br>​    <strong>java程序运行原理</strong><br>​        有Java命令启动JVM，启动JVM就相当于启动了一个进程，接着由该进程创建一个主线程去调用main方法<br>​    JVM的启动是多线程：最低是两个线程，一个是主线程、一个是垃圾回收线程<br>​    <strong>实现多线程程序</strong><br>​        1、继承Tread类、<br>​            自定义类继承Thread类<br>​            在自定义类中重写run方法<br>​            创建对象<br>​                创建两个线程对象，分别调用start();<br>​            启动线程<br>​                run():仅仅是封装了被线程执行的代码，直接调用是普通办法，不能开启多线程<br>​                start():首先启动了线程，然后再由jvm去调用该线程的run方法<br>​        2、实现Runnable接口<br>​            自定义类实现Runnable接口<br>​            在自定义类中重写run方法<br>​            创建自定义类的对象<br>​            创建Thread类对象，并上一步的对象作为参数传递<br>​    <strong>线程的生命周期</strong><br>​        新建：创建线程对象<br>​        就绪：线程有执行资格，没有执行权<br>​        运行：线程有执行资格，有执行权<br>​            阻塞：线程进入阻塞状态，没有执行资格，没有执行权<br>​                激活之后处于就绪状态<br>​        死亡：线程对象变成垃圾，等待被回收<br>​    线程的状态转换及常见执行情况<br>​    <strong>线程安全</strong><br>​        <strong>同步代码块</strong><br>​            synchronized（任意对象）{<br>​                需要同步的代码<br>​            }<br>​            对象的创建：该对象如同锁的功能，多个线程必须是同一把锁<br>​            需要同步的代码：把多条语句操作共享数据的代码的部分包起来<br>​            缺点：当线程非常多时，因为每个线程都会去判断同步上的锁，这是很耗费资源的，无形中会降低程序的运行效率。<br>​        <strong>同步方法</strong>：把synchronizated关键字加在方法上<br>​            同步方法的锁对象：this<br>​        <strong>静态同步方法</strong><br>​            静态方法的锁对象：当前类的字节码文件对象<br>​        java.util.concurrent.locks<br>​            void lock():获取锁<br>​            void unlock():释放锁<br>​            <!--一般使用try...catch将lock对象包括起来，且unlock必须在finally中--><br>​            try {<br>​                // 加锁<br>​                lock.lock();<br>​                if (tickets &gt; 0) {<br>​                    try {<br>​                        Thread.sleep(100);<br>​                    } catch (InterruptedException e) {<br>​                        e.printStackTrace();<br>​                    }<br>​                    System.out.println(Thread.currentThread().getName()<br>​                            + “正在出售第” + (tickets–) + “张票”);<br>​                }<br>​            } finally {<br>​                // 释放锁<br>​                lock.unlock();<br>​            }<br>​        <strong>死锁：</strong>同步嵌套时，容易产生死锁，两个或两个以上的线程在争夺资源的过程中，发生的一种互相等待的现象<br>​        public void run（）{<br>​            if (flag) {<br>​                synchronized (MyLocks.objA){<br>​                    synchronized (MyLocks.objB) {<br>​                    }<br>​                }<br>​            }else {<br>​                synchronized (MyLocks.objB) {<br>​                    synchronized (MyLocks.objA) {<br>​                    }<br>​                }<br>​            }<br>​        }</p>
+<h3 id="16、jvm相关知识点"><a href="#16、jvm相关知识点" class="headerlink" title="16、jvm相关知识点"></a>16、jvm相关知识点</h3><p>​    jvm内存分配<img src="C:%5CUsers%5Cma%5CDesktop%5Cjava%E7%AC%94%E8%AE%B0%5Cimg%5Cjvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D.png" alt="jvm内存分配"><br>​        栈中主要存放基本数据类型、对象的引用和函数调用的现场保存<br>​        堆中主要存放new()和构造器创建的对象<br>​        方法区主要存放常量池，static变量<br>​    String str = new String(“hello”);<br>​        str对象放在栈中，new创建出来的字符串对象放在堆中，“hello”字面量放在方法区<br>​    java中的内存泄露<br>​        1、创建一个对象，但一直不再使用，这个对象却一直被被引用，即这个对象无用但可达<br>​        2、如果一个外部类的实例对象的方法返回了一个内部类的实例对象，这个内部类对象被长期引用了，即使那个外部类实例对象不再被使用，但由于内部类持久外部类的实例对象，这个外部类对象将不会被垃圾回收，这也会造成内存泄露</p>
+<h3 id="17、内部类"><a href="#17、内部类" class="headerlink" title="17、内部类"></a>17、内部类</h3><p>​    访问特点：<br>​        内部类可以直接访问外部类的成员，包括私有<br>​        外部类要访问内部类的成员，必须创建对象<br>​    内部类位置<br>​        <strong>成员内部类</strong>：在成员位置定义的类，被成为成员内部类<br>​            访问：外部类名.内部类名 对象名 = 外部类对象.内部类对象<br>​            成员内部类的修饰符：<br>​                private：为了保证数据的安全性<br>​                static：<strong>内部类可以用静态修饰是因为内部类可以看成是外部类的成员</strong><br>​                    为了方便读取数据<br>​                    <strong>被静态修饰的成员内部类只能访问外部类的静态变量</strong><br>​                    访问：外部类名.内部类名 对象名 = 外部类对象.内部类名<br>​                    面试题<br>​                    class Outer {<br>​                    public int num = 10;<br>​                    class Inner {<br>​                        public int num = 20;<br>​                        public void show() {<br>​                            int num = 30;<br>​                            <!--就近原则--><br>​                            System.out.println(num);<br>​                             <!--this代表当前类--><br>​                            System.out.println(this.num);<br>​                             <!--this代表Outer类--><br>​                            System.out.println(Outer.this.num);<br>​                        }<br>​                    }<br>​                }<br>​        <strong>局部内部类</strong>：在局部位置定义的类，被称为局部内部类<br>​            访问：<br>​                可以直接访问外部类的成员<br>​                在局部位置，可以创建北部类对象，通过独享调用内部类方法，来适应局部内部类功能<br>​            面试题：局部内部类访问局部变量的注意事项<br>​                局部内部类访问的局部变量必须被final修饰，<br>​                局部变量是随着方法的调用而调用，随着调用完毕而消失，而堆内存的内容并不会立即消失，所以，我们加final修饰，这个变量就成了常量，所以你消失了，我在内存存储的数据还可以使用<br>​        <strong>匿名内部类</strong><br>​            前提：存在一个类或者接口，这里的类可以是具体类也可以是抽象类<br>​            本质：是一个继承了该类或者实现了该接口的子类匿名对象</p>
+<h3 id="18、javaweb"><a href="#18、javaweb" class="headerlink" title="18、javaweb"></a>18、javaweb</h3><p>​    get和post区别<br>​        1、get请求的数据放置在http协议头中<br>​           post请求的数据放置在HTTP包的包体<br>​        2、get提交的数据跟url的长度有关，http协议对url长度没有限制，但浏览器对url有限制<br>​           理论上post没有限制，可传较大量的数据<br>​        3、post的安全性比get的安全性高<br>​        4、get是向服务器索取数据的一种请求<br>​           post是向服务器提交数据的一种请求</p>
+<h3 id="19、锁的相关知识"><a href="#19、锁的相关知识" class="headerlink" title="19、锁的相关知识"></a>19、锁的相关知识</h3><p>​    </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/java/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="Ī������">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="�Ϻ�������">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/01/java/" class="post-title-link" itemprop="url">java</a>
         </h1>
-    
 
-        <p class="article-excerpt">
-            
-        </p>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-01 13:08:50" itemprop="dateCreated datePublished" datetime="2019-11-01T13:08:50+08:00">2019-11-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
     </div>
-</article>
-    
-        </div>
-    
 
     
     
     
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/11/01/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/11/01/hello-world/">0</span>
-    
-</span>
-
-
-    
-</a>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
         
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-11-01T04:41:26.752Z" itemprop="datePublished">2019-11-01</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/11/01/hello-world/">Hello World</a>
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="Ī������">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="�Ϻ�������">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
         </h1>
-    
 
-        <p class="article-excerpt">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </p>
-    </div>
-</article>
-    
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-01 12:41:26" itemprop="dateCreated datePublished" datetime="2019-11-01T12:41:26+08:00">2019-11-01</time>
+            </span>
+
+          
+
         </div>
+      </header>
+
     
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-    </div></section>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-                        </div>
-                    </section>
-                    <aside id="sidebar">
-    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-    <div class="sidebar-top">
-        <p>follow:</p>
-        <ul class="social-links">
-            
-                
-                <li>
-                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-twitter"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-facebook"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-stack-overflow"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
-                        <i class="icon fa fa-github"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-weibo"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-rss"></i>
-                    </a>
-                </li>
-                
-            
-        </ul>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
     </div>
+
     
-    <div class="widgets-container">
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="John Doe"
+    src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description">Ī������</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
         
-            
-                
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
 
-            
-                
-    <div class="widget-wrap">
-        <h3 class="widget-title">recents</h3>
-        <div class="widget">
-            <ul id="recent-post" class="">
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="thumbnail">
-    
-    
-        <span style="background-image:url(C:%5CUsers%5Cma%5CDesktop%5Cjava%E7%AC%94%E8%AE%B0%5Cimg%5C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97.bmp)" alt="Java基础核心知识点整理" class="thumbnail-image"></span>
-    
-    
-</a>
 
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/11/01/Java%E5%9F%BA%E7%A1%80%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="title">Java基础核心知识点整理</a></p>
-                            <p class="item-date"><time datetime="2019-11-01T05:13:13.812Z" itemprop="datePublished">2019-11-01</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/11/01/java/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
 
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/11/01/java/" class="title">java</a></p>
-                            <p class="item-date"><time datetime="2019-11-01T05:08:50.000Z" itemprop="datePublished">2019-11-01</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/11/01/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
+      </div>
 
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/11/01/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2019-11-01T04:41:26.752Z" itemprop="datePublished">2019-11-01</time></p>
-                        </div>
-                    </li>
-                
-            </ul>
-        </div>
     </div>
-
-            
-                
-
-            
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
-        <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">3</span></li></ul>
-        </div>
-    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-            
-                
+      </div>
+    </main>
 
-            
-                
-
-            
-                
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
-        <div class="widget">
-            <ul>
-                
-                    <li>
-                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
-                    </li>
-                
-            </ul>
-        </div>
-    </div>
-
-
-            
+    <footer class="footer">
+      <div class="footer-inner">
         
-    </div>
-</aside>
 
-                </div>
-            </div>
-        </div>
-        <footer id="footer">
-    <div class="container">
-        <div class="container-inner">
-            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="/" class="logo"></a>
-                </h1>
-                <p>&copy; 2019 John Doe</p>
-                
-                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
-                
-            </div>
-            <div class="footer-plugins">
-              
-    
-
-
-            </div>
-        </div>
-    </div>
-</footer>
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.3
+  </div>
 
         
-    
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
 
 
 
 
 
-    
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
-    
-    
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-    
-    
-
-    
 
 
 
-<!-- Custom Scripts -->
-<script src="/js/main.js"></script>
 
-    </div>
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>
