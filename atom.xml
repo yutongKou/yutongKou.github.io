@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-05T03:44:28.860Z</updated>
+  <updated>2019-11-05T03:46:57.515Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="http://yoursite.com/2019/11/04/java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <id>http://yoursite.com/2019/11/04/java面试题/</id>
     <published>2019-11-04T08:39:38.776Z</published>
-    <updated>2019-11-05T03:44:28.860Z</updated>
+    <updated>2019-11-05T03:46:57.515Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;Java面试题总结&quot;&gt;&lt;a href=&quot;#Java面试题总结&quot; class=&quot;headerlink&quot; title=&quot;Java面试题总结&quot;&gt;&lt;/a&gt;Java面试题总结&lt;/h1&gt;&lt;h2 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot;
-        
-      
+      &lt;h1 id=&quot;Java面试题总结&quot;&gt;&lt;a href=&quot;#Java面试题总结&quot; class=&quot;headerlink&quot; title=&quot;Java面试题总结&quot;&gt;&lt;/a&gt;Java面试题总结&lt;/h1&gt;&lt;h2 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot; class=&quot;headerlink&quot; title=&quot;Java基础&quot;&gt;&lt;/a&gt;Java基础&lt;/h2&gt;&lt;h3 id=&quot;JDK和JRE的区别&quot;&gt;&lt;a href=&quot;#JDK和JRE的区别&quot; class=&quot;headerlink&quot; title=&quot;JDK和JRE的区别&quot;&gt;&lt;/a&gt;JDK和JRE的区别&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;JDK：java开发工具包，提供了java的开发环境和运行环境。
+JRE:java运行环境，为java的运行提供了所需环境
+JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。
+如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
