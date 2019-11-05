@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-01T11:06:24.025Z</updated>
+  <updated>2019-11-04T08:39:46.118Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java</title>
-    <link href="http://yoursite.com/2019/11/01/Java/"/>
-    <id>http://yoursite.com/2019/11/01/Java/</id>
-    <published>2019-11-01T11:06:00.401Z</published>
-    <updated>2019-11-01T11:06:24.025Z</updated>
+    <title>java面试题</title>
+    <link href="http://yoursite.com/2019/11/04/java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/11/04/java面试题/</id>
+    <published>2019-11-04T08:39:38.776Z</published>
+    <updated>2019-11-04T08:39:46.118Z</updated>
     
     <summary type="html">
     
@@ -29,31 +29,9 @@
       
         
         
-          &lt;h1 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot; class=&quot;headerlink&quot; title=&quot;Java基础&quot;&gt;&lt;/a&gt;Java基础&lt;/h1&gt;&lt;h2 id=&quot;集合&quot;&gt;&lt;a href=&quot;#集合&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;Java面试题总结&quot;&gt;&lt;a href=&quot;#Java面试题总结&quot; class=&quot;headerlink&quot; title=&quot;Java面试题总结&quot;&gt;&lt;/a&gt;Java面试题总结&lt;/h1&gt;&lt;h2 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot;
         
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题总结</title>
-    <link href="http://yoursite.com/2019/11/01/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2019/11/01/面试题总结/</id>
-    <published>2019-11-01T10:58:02.538Z</published>
-    <updated>2019-11-01T11:10:21.236Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;title:  Java基础&lt;/p&gt;
-&lt;h3 id=&quot;1、JDK和JRE有什么区别&quot;&gt;&lt;a href=&quot;#1、JDK和JRE有什么区别&quot; class=&quot;headerlink&quot; title=&quot;1、JDK和JRE有什么区别&quot;&gt;&lt;/a&gt;1、JDK和JRE有什么区别&lt;/h3&gt;&lt;p&gt;​    JDK：java开发工具包，提供了java的开发环境和运行环境。&lt;br&gt;​    JRE：java运行环境，为java的运行提供了所需环境&lt;br&gt;​    JDK包含JRE、编译java源码的编译器javac和java程序调试和分析的工具。&lt;br&gt;​    如果只是运行java程序，安装JRE就可以了，需要编写Java程序，需要安装JDK。&lt;/p&gt;
-&lt;h3 id=&quot;2、-和equals的区别是什么&quot;&gt;&lt;a href=&quot;#2、-和equals的区别是什么&quot; class=&quot;headerlink&quot; title=&quot;2、==和equals的区别是什么&quot;&gt;&lt;/a&gt;2、==和equals的区别是什么&lt;/h3&gt;&lt;p&gt;​    ==：&lt;br&gt;​        基本类型：比较值是否相同；&lt;br&gt;​        引用类型：比较地址值是否相同；&lt;br&gt;​        String x = “string”;&lt;br&gt;​        String y = “string”;&lt;br&gt;​        String z = new String(“string”);&lt;br&gt;​        System.out.println(x==y); // true&lt;br&gt;​        System.out.println(x==z); // false&lt;br&gt;​        System.out.println(x.equals(y)); // true&lt;br&gt;​        System.out.println(x.equals(z)); // true&lt;br&gt;​    equals：&lt;br&gt;​        Object类中equals本质是==，&lt;br&gt;​        public boolean equals(Object obj) {&lt;br&gt;​            return (this == obj);&lt;br&gt;​        }&lt;br&gt;​        String和Integer等重写equals方法，此时比较值是否相同&lt;/p&gt;
-&lt;h3 id=&quot;3、hashcode和equal&quot;&gt;&lt;a href=&quot;#3、hashcode和equal&quot; class=&quot;headerlink&quot; title=&quot;3、hashcode和equal&quot;&gt;&lt;/a&gt;3、hashcode和equal&lt;/h3&gt;&lt;p&gt;​    两个对象的hashcode相同，equals不一定为true，&lt;br&gt;​    两个对象的equals为true，hashcode一定相同&lt;/p&gt;
-&lt;h3 id=&quot;4、final关键字&quot;&gt;&lt;a href=&quot;#4、final关键字&quot; class=&quot;headerlink&quot; title=&quot;4、final关键字&quot;&gt;&lt;/a&gt;4、final关键字&lt;/h3&gt;&lt;p&gt;​    final修饰的类叫最终类，该类不能被继承&lt;br&gt;​    final修饰的方法不能被重写&lt;br&gt;​    final修饰的变量叫常量&lt;br&gt;​        final修饰基本类型的局部变量，基本类型的值不能发生改变&lt;br&gt;​        final修饰引用类型的局部变量，引用类型的地址值不能发生改变，但是对象的堆内存的值可以改变。&lt;br&gt;​        final StringBuffer a = new StringBuffer(“a”);&lt;br&gt;​        a = new StringBuffer(“”);编译报错&lt;br&gt;​        a.append(“b”);编译成功&lt;/p&gt;
-&lt;h3 id=&quot;5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot;&gt;&lt;a href=&quot;#5、一个“-java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot; class=&quot;headerlink&quot; title=&quot;5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？&quot;&gt;&lt;/a&gt;5、一个“.java”源文件是否可以包括多个类（不是内部类）？有什么限制？&lt;/h3&gt;&lt;p&gt;​    可以有多个类，但是只能有一个public的类，并且public的类名必须与文件名一致&lt;/p&gt;
     
     </summary>
     
